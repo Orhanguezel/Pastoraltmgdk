@@ -1,0 +1,42 @@
+/* root.css */
+:root {
+    --primary-color: #7FDBDA;
+    --secondary-color: #ADE498;
+    --accent-color: #EDE682;
+    --highlight-color: #FEBF63;
+    --button-color: #FF6600;
+    --background-light: #F5F5F5;
+    --background-color: #F5F5F5;
+    --background2-color: #EAEDF2;
+    --background3-color: #333;
+    --error-color: #FF0000;
+    --success-color: #8FD14F;
+    --dark-color: #604CC3;
+    --tertiary-color: #7DDCD4;
+    --tertiary-color2: #86A12B;
+    --green2-color:#2F5E66;
+
+
+    --text-color: #333;
+    --text2-color: #ffffff;
+    --text4-color:#7b587f;
+    --text5-color: #7DDCD4;
+    --text6-color: #86A12B;
+
+
+    --font-size-large: 1.5rem;
+    --font-size-medium: 1rem;
+    --font-size-small: 0.875rem;
+    
+    --font-family: 'Rubik', sans-serif;
+    --font-family2: 'Open Sans', sans-serif;
+}
+
+body {
+    font-family: var(--font-family);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-light);
+}

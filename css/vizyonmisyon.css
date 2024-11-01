@@ -1,0 +1,124 @@
+/* Genel Stil Dosyası - styles.css */
+
+/* Vision Container */
+.vision-container {
+    padding: 20px;
+    margin-top: 150px;
+    margin: 20px auto;
+    max-width: 1100px;
+    background-color: var(--background2-color);
+    text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlık Alanı */
+.page-title {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(52, 51, 51, 0.1);
+    margin-bottom: 20px;
+}
+
+.page-title h2 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.page-title p {
+    color: var(--text-color);
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Misyon ve Vizyon İçeriği */
+.mission-vision-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.mission, .vision {
+    flex: 1;
+    background-color:var(--background-color);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 280px;
+    max-width: 500px;
+    text-align: left;
+}
+
+.mission:hover, .vision:hover {
+    transform: translateY(-5px);
+}
+
+.mission h2, .vision h2 {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.mission p, .vision p {
+    color: #333;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* İkon Ayarları */
+.mission-icon, .vision-icon {
+    color: var(--highlight-color);
+    margin-right: 8px;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+    .vision-container {
+        padding-top:10px ;
+    }
+
+    .page-title h2 {
+        font-size: 2em;
+    }
+
+    .page-title p {
+        font-size: 1em;
+    }
+
+    .mission-vision-content {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .mission, .vision {
+        padding: 15px;
+    }
+
+    .mission h2, .vision h2 {
+        font-size: 1.5em;
+    }
+
+    .mission p, .vision p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-title h2 {
+        font-size: 1.8em;
+    }
+
+    .mission, .vision {
+        padding: 10px;
+    }
+
+    .mission h2, .vision h2 {
+        font-size: 1.3em;
+    }
+
+    .mission p, .vision p {
+        font-size: 0.9em;
+    }
+}

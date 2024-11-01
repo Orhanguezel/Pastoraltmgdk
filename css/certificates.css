@@ -1,0 +1,82 @@
+/* Sertifikalar Bölümü */
+.certificates-section {
+    padding: 20px;
+    margin-top: 150px;
+    margin: 20px auto;
+    max-width: 1100px;
+    background-color: var(--background2-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.certificates-title {
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(52, 51, 51, 0.1);
+    margin-bottom: 20px;
+}
+
+.certificates-title h2 {
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.certificates-title p {
+    color: var(--text-color);
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.certificates-list {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+
+}
+
+.certificate-card {
+    flex: 1;
+    background-color:var(--background-color);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 280px;
+    max-width: 500px;
+    text-align: left;
+}
+
+.certificate-card:hover {
+    transform: translateY(-5px);
+}
+
+.certificate-card h3 {
+    color: var(--primary-color);
+    margin: 10px 0;
+}
+
+.certificate-card p {
+    color: var(--text-color);
+    font-size: 1em;
+}
+
+.certificate-icon {
+    font-size: 2.5em;
+    color: var(--highlight-color);
+    margin-bottom: 15px;
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+    .certificates-section {
+        padding: 15px;
+    }
+
+    .certificates-title h2 {
+        font-size: 2em;
+    }
+
+    .certificate-card {
+        width: 100%;
+    }
+}

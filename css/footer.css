@@ -1,0 +1,88 @@
+/* footer.css */
+
+footer {
+    position:static;
+    bottom:0;
+    background-color:var(--background3-color);
+    color: var(--text2-color);
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer-content {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 15px;
+  }
+  
+  .footer-logo img {
+    max-width: 120px;
+  }
+
+  .footer-logo p {
+    font-size: 0.8rem;
+    color: var(--text2-color);
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links a,
+  .footer-contact p {
+    color: var(--background-color);
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+  }
+  
+  .footer-links a:hover {
+    color:var(--primary-color);
+  }
+  
+  .footer-social a {
+    color: #f5f5f5;
+    margin: 0 8px;
+    font-size: 20px;
+  }
+  
+  .footer-social a:hover {
+    color: #87CEEB;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #777;
+    padding-top: 10px;
+  }
+
+  .designed-by-link {
+    color: var(--text4-color);
+    text-decoration: none;
+  }
+  .designed-by-link:hover {
+    color: var(--highlight-color); /* Hover text rengi */
+    background-color: var(--green2-color); /* Hover arka plan rengi */
+  }
+  
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-section {
+    margin-bottom: 30px;
+  }
+
+  .scroll-to-top {
+    display: none;
+  }
+}
