@@ -1,5 +1,10 @@
 export function loadCarousel() {
-    const carousel = document.getElementById('carousel');
+    const carousel = document.getElementById("carousel");
+    if (!carousel) {
+        console.error("Carousel elementi bulunamadı.");
+        return;
+    }
+
     carousel.innerHTML = `
         <div class='carousel-container'>
             <!-- Informasyon bölümü -->

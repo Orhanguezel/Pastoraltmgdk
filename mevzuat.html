@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mevzuat</title>
+
+    <!-- Fontlar ve İkonlar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <!-- CSS Dosyaları -->
+    <link rel="stylesheet" href="css/root.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/mevzuat.css" />
+</head>
+
+<body data-page-type="mevzuat">
+    <!-- Header Component -->
+    <div id="header"></div>
+
+    <!-- Sayfa Üstü Görsel -->
+    <div class="page-header-image">
+        <img src="assets/img/genel/12.png" alt="Mevzuat" />
+    </div>
+
+    <!-- Mevzuat Bölümü -->
+    <section id="mevzuat">
+        <div class="container">
+          <!-- Sidebar -->
+          <div class="sidebar">
+            <h2>Mevzuat</h2>
+            <ul id="item-titles">
+              <!-- Dinamik olarak eklenecek ana başlıklar -->
+            </ul>
+          </div>
+          <!-- Content Area -->
+          <div class="content-area">
+            <div id="static-message">
+              <i class="fas fa-info-circle"></i> Detaylar için bir başlık seçin.
+            </div>
+            <button id="back-button-top" class="hidden">Geri Dön</button>
+            <div id="item-content"></div>
+            <button id="back-button-bottom" class="hidden">Geri Dön</button>
+          </div>
+        </div>
+      </section>
+      
+
+    <!-- Footer Component -->
+    <div id="footer"></div>
+
+    <!-- JavaScript Dosyaları -->
+    <script src="js/app.js" type="module"></script>
+    <script src="components/mevzuat.js" type="module"></script>
+</body>
+</html>

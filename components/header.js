@@ -110,14 +110,12 @@ export function loadHeader() {
                                     <ul>
                                         <li><a href="#" class="upper-level">Mevzuatlar</a>
                                             <ul>
-                                                <li><a href="#">Kanunlar</a></li>
-                                                <li><a href="#">Yönetmelikler</a></li>
-                                                <li><a href="#">Yönergeler</a></li>
-                                                <li><a href="#">Genelgeler</a></li>
-                                                <li><a href="#">Uluslararası Sözleşmeler</a></li>
-                                                <li><a href="#">Tebliğler</a></li>
-                                                <li><a href="#">Talimatlar</a></li>
-                                                <li><a href="#">Duyurular</a></li>
+                                                <li><a href="mevzuat.html#kanunlar">Kanunlar</a></li>
+                                                <li><a href="mevzuat.html#yonetmelikler">Yönetmelikler</a></li>
+                                                <li><a href="mevzuat.html#yonergeler">Yönergeler</a></li>
+                                                <li><a href="mevzuat.html#genelgeler">Genelgeler</a></li>
+                                                <li><a href="mevzuat.html#tebligler">Tebliğler</a></li>
+                                                <li><a href="mevzuat.html#talimatlar">Talimatlar</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#" class="upper-level">Diğer</a>
