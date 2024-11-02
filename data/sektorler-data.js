@@ -1,9 +1,8 @@
 export const sektorlerData = [
     {
-        title: "Kimya Sanayi TMGD",
+        title: "Kimya Sanayi TMGD Hizmeti - Pastoral TMGD",
         image: "/images/kimya-sanayi.jpg",
         content: `
-            <h2>Kimya Sanayi TMGD Hizmeti - Pastoral TMGD</h2>
             <p>Kimya sanayii, tehlikeli madde taşımacılığı (ADR) açısından en önemli sektörlerden biridir. Pastoral TMGD olarak, bu sektördeki tehlikeli madde güvenliğini en üst seviyeye çıkarmak amacıyla profesyonel Tehlikeli Madde Güvenlik Danışmanlığı (TMGD) hizmetleri sunmaktayız. Kimya sektörü, tarım ilaçlarından boya üretimine, ilaç sanayinden kozmetik ve temizlik ürünlerine kadar geniş bir yelpazede birçok sektöre hammadde sağlayarak ülkemizin üretim ve ticaret ağında kritik bir rol oynamaktadır. Bu sebeple, kimya sektöründe güvenlik ve yasal gerekliliklerin sağlanması hayati önem taşır.</p>
             <p>Kimya sektöründeki faaliyetler, ADR hükümlerine uygun olarak tehlikeli madde sınıflandırması altında taşınmalıdır. Kimyasal maddelerin kullanımı sonrası ortaya çıkan ambalaj ve kaplar ile tehlikeli kimyasal atıkların güvenli bir şekilde yönetilmesi gerekmektedir. Pastoral TMGD olarak, kimya sektöründeki firmaların tüm ADR yükümlülüklerini karşılamaları için gerekli tüm destek ve danışmanlık hizmetlerini sağlıyoruz. Tüm TMGD ihtiyaçlarınız için bize <a href='#'>iletişim sayfamız</a> üzerinden ulaşabilirsiniz.</p>
             <h3>Kimya Sektörünün TMGD Hizmeti Kapsamı</h3>
@@ -15,10 +14,9 @@ export const sektorlerData = [
         `
     },
     {
-        title: "Hastane ve Sağlık Sektörü TMGD",
+        title: "Hastane ve Sağlık Sektörü TMGD Hizmeti - Pastoral TMGD",
         image: "/images/saglik-sektoru.jpg",
         content: `
-            <h2>Hastane ve Sağlık Sektörü TMGD Hizmeti - Pastoral TMGD</h2>
             <p>Hastane ve sağlık sektörü, tehlikeli madde yönetimi açısından büyük önem taşıyan sektörlerden biridir. Pastoral TMGD olarak, sağlık kuruluşlarına yönelik profesyonel Tehlikeli Madde Güvenlik Danışmanlığı (TMGD) hizmetleri sunuyoruz. Sağlık sektöründe kullanılan bulaşıcı maddeler, basınçlı gazlar ve radyasyon gibi tehlikeli kimyasallar, ADR hükümlerine tabi olup dikkatli bir şekilde yönetilmelidir. Sağlık kuruluşları, bu tehlikeli maddelerin güvenli bir şekilde taşınması ve depolanması için gerekli önlemleri almalıdır.</p>
             <p>ADR yönetmeliğine göre, sağlık sektörü hastanelerde, tıp merkezlerinde, polikliniklerde ve diyaliz merkezlerinde kullanılan bulaşıcı maddeleri; patojen içerme olasılığı yüksek maddeler olarak sınıflandırır. Patojenler, insanlarda veya hayvanlarda hastalığa neden olabilecek bakteri, virüs, parazit gibi ajanları içerir. Pastoral TMGD olarak, bu tür tehlikeli maddelerin güvenli yönetimi için sağlık sektöründeki işletmelere kapsamlı danışmanlık hizmetleri sağlıyoruz. Tüm TMGD ihtiyaçlarınız için bize <a href='#'>iletişim sayfamız</a> üzerinden ulaşabilirsiniz.</p>
             <h3>Sağlık Sektörünün TMGD Hizmeti Kapsamı</h3>
@@ -34,7 +32,6 @@ export const sektorlerData = [
         title: "Akaryakıt İstasyonları TMGD Muafiyet Belgesi",
         image: "/images/akaryakit-istasyonu.jpg",
         content: `
-            <h2>Akaryakıt İstasyonları Tehlikeli Madde Güvenlik Danışmanı Muafiyeti</h2>
             <p>Akaryakıt istasyonlarında Tehlikeli Madde Güvenlik Danışmanı (TMGD) muafiyeti raporu alarak, altı ay süre ile danışmanlık hizmeti alma zorunluluğundan muaf olabilirsiniz. Pastoral TMGD olarak, Akaryakıt İstasyonu TMGD Muafiyet Raporunu hazırlıyoruz.</p>
             <h3>Muafiyet Kapsamı</h3>
             <p>11/06/2019 tarihli ve 44011 sayılı bakanlık yönergesine göre, tankeri olmayan ve sadece alıcı konumunda bulunan akaryakıt istasyonları TMFB almak şartıyla TMGD hizmeti alma zorunluluğundan muaf tutulmaktadır.</p>
@@ -103,7 +100,6 @@ export const sektorlerData = [
         title: "Tekstil ve Deri Sektörü TMGD Hizmeti",
         image: "/images/tekstil-deri-sektoru.jpg",
         content: `
-            <h2>Tekstil ve Deri Sektörü Tehlikeli Madde Güvenlik Danışmanlık (TMGD) Hizmeti</h2>
             <p>Tekstil ve Deri Sektörü TMGD Hizmeti için detaylı bilgi almak adına bizlere <a href="/iletisim">iletişim sayfamızdan</a> ulaşabilirsiniz. Tekstil sektörü, çeşitli organik (yün, pamuk) ve inorganik (Polyester, Polyamid vb.) hammaddelerle çalışır. Bu hammaddeler, giyilebilir ürünler haline gelene kadar çeşitli kimyasallarla işlem görmekte, temizleme, boyama, baskı ve bitirme gibi aşamalardan geçmektedir. Bu süreçte kullanılan kimyasal maddeler ADR (Tehlikeli Maddelerin Karayolu ile Taşınması) hükümlerine tabidir.</p>
     
             <h3>Tehlikeli Madde Faaliyet Belgesi (TMFB) Zorunluluğu</h3>
@@ -123,7 +119,6 @@ export const sektorlerData = [
         title: "Lojistik ve Depolama Sektörü TMGD Hizmeti",
         image: "/images/lojistik-depolama.jpg",
         content: `
-            <h2>Lojistik ve Depolama Sektörü Tehlikeli Madde Güvenlik Danışmanlık (TMGD) Hizmeti</h2>
             <p>Lojistik ve Depolama Sektörü TMGD Hizmeti için detaylı bilgi almak adına bizlere <a href="/iletisim">iletişim sayfamızdan</a> ulaşabilirsiniz. Genellikle lojistik ve depolama tesislerinde tehlikeli maddeler ile işlem yapılmakta olup, tehlikeli madde taşıyan bu işletmelerin “Tehlikeli Madde Faaliyet Belgesi (TMFB)” sahibi olmaları gerekmektedir. Ayrıca, Ulaştırma, Denizcilik ve Haberleşme Bakanlığı tarafından yetkilendirilmiş Tehlikeli Madde Güvenlik Danışmanlık Kurumlarından (TMGDK) Tehlikeli Madde Güvenlik Danışmanlığı (TMGD) hizmeti almaları yasal bir zorunluluktur.</p>
     
             <h3>Tehlikeli Madde Güvenlik Danışmanlık (TMGD) Hizmeti ile Avantaj Kazanın</h3>
@@ -140,7 +135,6 @@ export const sektorlerData = [
         title: "Ambalaj ve Baskı Sanayi TMGD Hizmeti",
         image: "/images/ambalaj-baski-sanayi.jpg",
         content: `
-            <h2>Ambalaj ve Baskı Sanayi Tehlikeli Madde Güvenlik Danışmanlık (TMGD) Hizmeti</h2>
             <p>Ambalaj ve baskı sanayisinde kullanılan pek çok tehlikeli madde, ADR hükümlerine tabidir. Boya, alkol çeşitleri, pigmentler, lak ve solventler (tiner vb.) gibi kimyasal maddeler, sektörün önemli bileşenlerindendir. Bu tehlikeli kimyasallar, hem iş süreçlerinde kullanılırken hem de atık yönetiminde ADR kapsamında değerlendirilir.</p>
             <p>Bu sektörde faaliyet gösteren işletmelerin <strong>Tehlikeli Madde Faaliyet Belgesi (TMFB)</strong> sahibi olması zorunludur. Aynı zamanda, <strong>Ulaştırma, Denizcilik ve Haberleşme Bakanlığı</strong> tarafından yetkilendirilmiş <strong>Tehlikeli Madde Güvenlik Danışmanlık Kurumlarından (TMGDK)</strong> hizmet almaları yasal bir yükümlülüktür.</p>
     
@@ -154,7 +148,6 @@ export const sektorlerData = [
         title: "Gemi İnşa ve Bakım Sanayi TMGD Hizmeti",
         image: "/images/gemi-insa-bakim.jpg",
         content: `
-            <h2>Gemi İnşa ve Bakım Sanayi Tehlikeli Madde Güvenlik Danışmanlık (TMGD) Hizmeti</h2>
             <p>Gemi inşa ve bakım sanayisinde kullanılan tehlikeli maddeler, güvenlik açısından büyük öneme sahiptir. Bu alanda TMGD hizmetlerimizle ilgili detaylı bilgiye ulaşmak için <a href="/iletisim">iletişim sayfamızdan</a> bize ulaşabilirsiniz. Metaller, solventler, zehirli gazlar, asitler, alkaliler, boyalar, kanserojen maddeler, kansorejen tozlar ve basınçlı tüpler gibi pek çok tehlikeli madde, gemi inşa ve bakım süreçlerinde kullanılmakta olup, ADR hükümlerine tabidir. Ayrıca, bu tehlikeli maddelerin atıkları da ADR kapsamında değerlendirilmektedir.</p>
             <p>Gemi inşa ve bakım işletmeleri, yıllık olarak 50 tonun üstünde işlem kapasitesine sahiptir ve yasal olarak <strong>Tehlikeli Madde Faaliyet Belgesi (TMFB)</strong> sahibi olmaları gerekmektedir. Bu işletmelerin, Ulaştırma, Denizcilik ve Haberleşme Bakanlığı tarafından yetkilendirilmiş <strong>Tehlikeli Madde Güvenlik Danışmanlık Kurumlarından (TMGDK)</strong> TMGD hizmeti almaları zorunludur.</p>
     
@@ -168,7 +161,6 @@ export const sektorlerData = [
         title: "Kozmetik ve Temizlik Ürünleri Sanayi TMGD Hizmeti",
         image: "/images/kozmetik-temizlik.jpg",
         content: `
-            <h2>Kozmetik ve Temizlik Ürünleri Sanayi Tehlikeli Madde Güvenlik Danışmanlık (TMGD) Hizmeti</h2>
             <p>Kozmetik ve temizlik ürünlerinin üretim, depolama ve perakende işlemleri sırasında taşıma ve depolama süreçlerinde güvenlik son derece önemlidir. Bu ürünler ADR hükümleri kapsamında ele alınmakta olup, sprey deodorantlar, parfümler ve temizlik malzemeleri gibi pek çok evsel ve kişisel kullanım amaçlı ürün, ADR kapsamında değerlendirilmektedir. TMGD hizmetlerimizle ilgili detaylı bilgi almak için <a href="/iletisim">iletişim sayfamızdan</a> bize ulaşabilirsiniz.</p>
             <p>Kozmetik ve temizlik ürünleri sanayi tesislerinde işlem gören tehlikeli maddeler, <strong>Tehlikeli Madde Faaliyet Belgesi (TMFB)</strong> alınmasını zorunlu kılmaktadır. Bu belgeye sahip olmak ve ilgili TMGD hizmetlerini sağlamak, yasal olarak <strong>Ulaştırma, Denizcilik ve Haberleşme Bakanlığı</strong> tarafından yetkilendirilmiş bir <strong>Tehlikeli Madde Güvenlik Danışmanlık Kurumundan (TMGDK)</strong> hizmet alınmasını gerektirir.</p>
     
@@ -182,7 +174,6 @@ export const sektorlerData = [
         title: "Otomotiv Sanayi TMGD Hizmeti",
         image: "/images/otomotiv-sanayi.jpg",
         content: `
-            <h2>Otomotiv Sanayi Tehlikeli Madde Güvenlik Danışmanlık (TMGD) Hizmeti</h2>
             <p>Otomotiv sanayisi, üretim ve bakım süreçlerinde birçok tehlikeli kimyasal maddenin kullanımını gerektirir. Bu maddeler ADR hükümlerine tabi olduğu gibi, boş ve ıskarta ambalajları, kontamine atıklar, atık boyalar ve boya çamurları gibi birçok yan ürün de tehlikeli madde sınıfına girmektedir. Bu atıkların, ADR ve ulusal atık taşıma kurallarına uygun olarak yetkili firmalarca bertaraf edilmesi zorunludur. Konu hakkında ücretsiz bilgi almak ve detayları öğrenmek için <a href="/iletisim">iletişim sayfamızdan</a> bize ulaşabilirsiniz.</p>
             <p>Otomotiv sanayi prosesinde kullanılan tehlikeli maddeler arasında Karbondioksit, Argon, Oksijen, Sodyum Hidroksit çözeltileri, gaz yağı, benzine kadar birçok kimyasal yer almaktadır. Bu maddelerin işlenmesi ve taşınması sırasında yasal zorunluluk olan <strong>Tehlikeli Madde Faaliyet Belgesi (TMFB)</strong> ile birlikte <strong>Tehlikeli Madde Güvenlik Danışmanlığı (TMGD)</strong> hizmeti alınması gerekmektedir. Bu hizmet, <strong>Ulaştırma, Denizcilik ve Haberleşme Bakanlığı</strong> tarafından yetkilendirilmiş danışmanlık kurumları tarafından sağlanmaktadır.</p>
     
@@ -196,7 +187,6 @@ export const sektorlerData = [
         title: "Belediyeler için Tehlikeli Madde Güvenlik Danışmanlığı ve TMGD Hizmeti",
         image: "/images/belediye.jpg",
         content: `
-            <h2>Belediyeler için Tehlikeli Madde Güvenlik Danışmanlık (TMGD) Hizmeti</h2>
             <p>Belediyeler, kamu hizmetlerinde çeşitli müdürlüklerde tehlikeli maddelerle çalışmaktadır. Özellikle fen işleri müdürlüklerinde kullanılan bitümlü asfalt gibi maddeler, belirli sıcaklık ve parlama noktası özelliklerine göre ADR kapsamında tehlikeli madde sınıflandırmalarına girer. Belediyeler, bu gibi maddelerle ilgili faaliyetlerde bulunurken güvenli bir çalışma sağlamak ve yasal gereklilikleri karşılamak adına <strong>Tehlikeli Madde Faaliyet Belgesi (TMFB)</strong> ve <strong>Tehlikeli Madde Güvenlik Danışmanlığı (TMGD)</strong> hizmetini almak zorundadır. Konu hakkında daha fazla bilgi almak için <a href="/iletisim">iletişim sayfamızdan</a> bize ulaşabilirsiniz.</p>
             
             <p>Belediye müdürlüklerinde kullanılan yol çizgi boyaları, tiner, incelticiler, vernik gibi ürünler ve bunların atıkları da dahil olmak üzere pek çok kimyasal madde ADR kapsamında değerlendirilmektedir. Bu maddelerin işlenmesi ve taşınması sırasında yasal yükümlülüklerin yerine getirilmesi için yetkili TMGD firmalarından destek alınmalıdır.</p>
@@ -213,7 +203,6 @@ export const sektorlerData = [
         title: "Cam Sektörü TMGD Hizmeti ve Tehlikeli Madde Güvenlik Danışmanlığı",
         image: "/images/cam-sektoru.jpg",
         content: `
-            <h2>Cam Sektörü Tehlikeli Madde Güvenlik Danışmanlık (TMGD) Hizmeti</h2>
             <p>Cam sektörü, ham madde olarak toprak kullanımı ile ülkemiz için önemli bir sanayi koludur. Cam üretim sürecinde ve camın son kullanıcıya hazır hale getirilmesinde birçok tehlikeli madde ile işlem yapılmaktadır. Forkliftlerde kullanılan mazot, cam temizliğinde kullanılan alkol, yalıtım camlarında kullanılan argon gazı gibi kimyasallar, sektördeki tehlikeli maddelere örnek olarak verilebilir. Tüm kimyasallar ADR mevzuatına göre tehlikeli madde olarak sınıflandırılmasa da, belirli tonaj ve tehlike kategorilerinde bulunan işletmelerin <strong>Tehlikeli Madde Güvenlik Danışmanlığı (TMGD)</strong> hizmeti alması zorunludur. <a href="/iletisim">İletişim sayfamızdan</a> bizimle irtibata geçerek firmanızın muafiyet durumu hakkında bilgi alabilirsiniz.</p>
             
             <p>Cam sektöründe kullanılan kimyasallar arasında, ADR kapsamına giren ve girme ihtimali olan birçok madde bulunmaktadır. Özellikle bir takvim yılı içinde elli tonun üzerinde tehlikeli madde işlemi yapan veya ADR kapsamındaki kategori sıfır tehlikeli maddelerle iştigal eden işletmelerin <strong>Tehlikeli Madde Faaliyet Belgesi (TMFB)</strong> almaları zorunludur.</p>
@@ -237,7 +226,6 @@ export const sektorlerData = [
         title: "Madencilik ve Mermer Ocakları TMGD Hizmeti",
         image: "/images/madencilik-mermer-ocaklari.jpg",
         content: `
-            <h2>Madencilik ve Mermer Ocakları Tehlikeli Madde Güvenlik Danışmanlık (TMGD) Hizmeti</h2>
             <p>Madencilik, mermer ocakları ve benzeri işletmeler, ADR kapsamına giren tehlikeli maddelerle iştigal etmeleri nedeniyle <strong>Tehlikeli Madde Güvenlik Danışmanlığı (TMGD)</strong> hizmeti almak zorundadır. Bu işletmelerin <strong>Tehlikeli Madde Faaliyet Belgesi</strong>, yalnızca yetkilendirilmiş TMGD kuruluşları tarafından düzenlenebilir. Yanlış belge türlerinin alınması, işletmelerin ciddi cezai yaptırımlarla karşı karşıya kalmasına neden olabilir. Konu hakkında ayrıntılı bilgi almak ve işlemleriniz için danışmanlık talebinde bulunmak için <a href="/iletisim">iletişim sayfamızdan</a> bize ulaşabilirsiniz.</p>
     
             <h3>Tehlikeli Madde Güvenlik Danışmanlığı Hizmet Detayları</h3>
@@ -252,7 +240,6 @@ export const sektorlerData = [
         title: "Gıda Sektöründe Tehlikeli Madde Güvenlik Danışmanlığı (TMGD) Hizmeti",
         image: "/images/gida-sektoru.jpg",
         content: `
-            <h2>Gıda Sektöründe Tehlikeli Madde Güvenlik Danışmanlık (TMGD) Hizmeti</h2>
             <p>Gıda sektörü, insanların sağlıklı ve güvenli gıdaya erişimini sağlamada kritik bir öneme sahiptir. Üretimden tüketiciye ulaşana dek gıda güvenliği sağlanmalı ve ADR kuralları ile <strong>Ulaştırma ve Alt Yapı Bakanlığı</strong> mevzuatlarına uygun hareket edilmelidir. <a href="/iletisim">İletişim sayfamızdan</a> bize ulaşarak ücretsiz bilgi alabilirsiniz.</p>
             
             <p>Gıda sektöründe raf ömrünü uzatan koruyucular, aromalar ve diğer bileşenlerin üretim sürecinde birçok kimyasal maddeye ihtiyaç duyulmaktadır. Bu kimyasallar arasında alevlenir sıvılar, aşındırıcı sıvılar, çevreye zararlı maddeler bulunmaktadır ve bazıları <strong>ADR hükümlerine tabi</strong> tehlikeli maddeler sınıfında değerlendirilmektedir.</p>
