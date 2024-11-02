@@ -1,13 +1,13 @@
 export function loadHeader() {
-    const header = document.getElementById("header");
-  
-    // Şu anki sayfanın adını belirleyin
-    const currentPage = window.location.pathname.split("/").pop();
-  
-    // Sayfaya göre farklı linkler tanımlayın
-    const linkPrefix = currentPage === "index.html" ? "" : "index.html";
-  
-    header.innerHTML = `
+  const header = document.getElementById("header");
+
+  // Şu anki sayfanın adını belirleyin
+  const currentPage = window.location.pathname.split("/").pop();
+
+  // Sayfaya göre farklı linkler tanımlayın
+  const linkPrefix = currentPage === "index.html" ? "" : "index.html";
+
+  header.innerHTML = `
          <header>
             <div class="header-top">
                 <a href="index.html">
@@ -66,21 +66,22 @@ export function loadHeader() {
                                     <ul>
                                         <li><a href="#" class="upper-level">Hizmet Verdiğimiz Sektörler</a>
                                             <ul>
-                                                <li><a href="#">Kimya Sanayi TMGD</a></li>
-                                                <li><a href="#">Hastane ve Sağlık TMGD</a></li>
-                                                <li><a href="#">Akaryakıt ve Petrol TMGD</a></li>
-                                                <li><a href="#">Tekstil ve Deri Sektörü</a></li>
-                                                <li><a href="#">Lojistik ve Depolama Sektörü</a></li>
-                                                <li><a href="#">Ambalaj ve Baskı Sanayi</a></li>
-                                                <li><a href="#">Gemi İnşa ve Bakım Sanayi</a></li>
-                                                <li><a href="#">Kozmetik ve Temizlik Sanayi</a></li>
-                                                <li><a href="#">Otomotiv Sanayi TMGD</a></li>
-                                                <li><a href="#">Belediyeler İçin TMGD</a></li>
-                                                <li><a href="#">Cam Sektörü TMGD</a></li>
-                                                <li><a href="#">Doğal Taş Sektörü İçin TMGD</a></li>
-                                                <li><a href="#">Gıda Sektörü TMGD</a></li>
+                                                <li><a href="sektorler.html#kimya-sanayi-tmgd">Kimya Sanayi TMGD</a></li>
+                                                <li><a href="sektorler.html#hastane-ve-salk-sektr-tmgd">Hastane ve Sağlık TMGD</a></li>
+                                                <li><a href="sektorler.html#akaryakt-istasyonlar-tmgd-muafiyet-belgesi">Akaryakıt ve Petrol TMGD</a></li>
+                                                <li><a href="sektorler.html#tekstil-ve-deri-sektr-tmgd-hizmeti">Tekstil ve Deri Sektörü</a></li>
+                                                <li><a href="sektorler.html#lojistik-ve-depolama-sektr-tmgd-hizmeti">Lojistik ve Depolama Sektörü</a></li>
+                                                <li><a href="sektorler.html#ambalaj-ve-bask-sanayi-tmgd-hizmeti">Ambalaj ve Baskı Sanayi</a></li>
+                                                <li><a href="sektorler.html#gemi-ina-ve-bakm-sanayi-tmgd-hizmeti">Gemi İnşa ve Bakım Sanayi</a></li>
+                                                <li><a href="sektorler.html#kozmetik-ve-temizlik-rnleri-sanayi-tmgd-hizmeti">Kozmetik ve Temizlik Sanayi</a></li>
+                                                <li><a href="sektorler.html#otomotiv-sanayi-tmgd-hizmeti">Otomotiv Sanayi TMGD</a></li>
+                                                <li><a href="sektorler.html#belediyeler-iin-tehlikeli-madde-gvenlik-danmanl-ve-tmgd-hizmeti">Belediyeler İçin TMGD</a></li>
+                                                <li><a href="sektorler.html#cam-sektr-tmgd-hizmeti-ve-tehlikeli-madde-gvenlik-danmanl">Cam Sektörü TMGD</a></li>
+                                                <li><a href="sektorler.html#madencilik-ve-mermer-ocaklar-tmgd-hizmeti">Doğal Taş Sektörü İçin TMGD</a></li>
+                                                <li><a href="sektorler.html#gda-sektrnde-tehlikeli-madde-gvenlik-danmanl-tmgd-hizmeti">Gıda Sektörü TMGD</a></li>
                                             </ul>
                                         </li>
+
                                         <li><a href="#" class="upper-level">TMGDK</a>
                                             <ul>
                                                   <li><a href="hizmetlerimiz.html#tehlikeli-madde-gvenlik-danmanl-hizmetleri">Tehlikeli Madde Güvenlik Danışmanlığı Hizmetleri</a></li>
@@ -137,49 +138,48 @@ export function loadHeader() {
             </nav>
           </header>
       `;
-  
-    // FontAwesome İkonları dahil et
-    const fontAwesomeLink = document.createElement("link");
-    fontAwesomeLink.rel = "stylesheet";
-    fontAwesomeLink.href =
-      "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
-    document.head.appendChild(fontAwesomeLink);
-  
-    // Dropdown menüyü hover olayına göre aç/kapat
-    const dropdownItems = document.querySelectorAll(".pastoral-dropdown");
-    dropdownItems.forEach((dropdown) => {
-      const content = dropdown.querySelector(".pastoral-dropdown-content");
-  
-      // Hover ile açma
-      dropdown.addEventListener("mouseenter", () => {
-        content.classList.add("pastoral-show");
-      });
-  
-      // Hover dışına çıkıldığında kapama
-      dropdown.addEventListener("mouseleave", () => {
-        content.classList.remove("pastoral-show");
-      });
+
+  // FontAwesome İkonları dahil et
+  const fontAwesomeLink = document.createElement("link");
+  fontAwesomeLink.rel = "stylesheet";
+  fontAwesomeLink.href =
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
+  document.head.appendChild(fontAwesomeLink);
+
+  // Dropdown menüyü hover olayına göre aç/kapat
+  const dropdownItems = document.querySelectorAll(".pastoral-dropdown");
+  dropdownItems.forEach((dropdown) => {
+    const content = dropdown.querySelector(".pastoral-dropdown-content");
+
+    // Hover ile açma
+    dropdown.addEventListener("mouseenter", () => {
+      content.classList.add("pastoral-show");
     });
-  
-    // Mobil menü açma/kapatma işlevselliği ve animasyonlar
-    const menuToggle = document.getElementById("menu-toggle");
-    const mainNav = document.getElementById("main-nav");
-    const bars = document.querySelectorAll(".bar");
-  
-    menuToggle.addEventListener("click", () => {
-      mainNav.classList.toggle("pastoral-mobile-visible");
-      menuToggle.classList.toggle("open");
-  
-      // Hamburger menünün çubuklarının animasyonu
-      bars.forEach((bar, index) => {
-        if (index === 0) {
-          bar.classList.toggle("rotate-down");
-        } else if (index === 1) {
-          bar.classList.toggle("hide");
-        } else if (index === 2) {
-          bar.classList.toggle("rotate-up");
-        }
-      });
+
+    // Hover dışına çıkıldığında kapama
+    dropdown.addEventListener("mouseleave", () => {
+      content.classList.remove("pastoral-show");
     });
-  }
-  
+  });
+
+  // Mobil menü açma/kapatma işlevselliği ve animasyonlar
+  const menuToggle = document.getElementById("menu-toggle");
+  const mainNav = document.getElementById("main-nav");
+  const bars = document.querySelectorAll(".bar");
+
+  menuToggle.addEventListener("click", () => {
+    mainNav.classList.toggle("pastoral-mobile-visible");
+    menuToggle.classList.toggle("open");
+
+    // Hamburger menünün çubuklarının animasyonu
+    bars.forEach((bar, index) => {
+      if (index === 0) {
+        bar.classList.toggle("rotate-down");
+      } else if (index === 1) {
+        bar.classList.toggle("hide");
+      } else if (index === 2) {
+        bar.classList.toggle("rotate-up");
+      }
+    });
+  });
+}

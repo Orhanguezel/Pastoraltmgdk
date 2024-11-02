@@ -264,6 +264,25 @@ table caption {
   display: none;
 }
 
+/* .content-wrapper ve içerik detayları için düzenlemeler */
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* Resim ile metin arasındaki boşluk */
+}
+
+.content-image {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.content-details {
+  flex: 1;
+}
+
+
 /* Responsive düzenlemeler */
 @media (max-width: 768px) {
   .container {
