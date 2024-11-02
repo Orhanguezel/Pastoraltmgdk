@@ -12,11 +12,12 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   try {
     // Sayfa türüne göre veri dosyasını yükle ve başlığı ayarla
-    if (pageType === "mevzuat") {
-      data = await import("../data/mevzuat-data.js").then(
-        (module) => module.mevzuatData
-      );
-      sidebarTitle.textContent = "Mevzuat";
+    if (pageType === "services") {
+      data = await import("../data/services-data.js").then((module) => module.servicesData);
+      sidebarTitle.textContent = "TMGDK Hizmetleri";
+    } else if (pageType === "sektorler") {
+      data = await import("../data/sektorler-data.js").then((module) => module.sektorlerData);
+      sidebarTitle.textContent = "Hizmet Verdiğimiz Sektörler";
     } else {
       console.error("Geçersiz sayfa türü.");
       return;
@@ -34,9 +35,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     // Sidebar başlıklarını oluştur
     data.forEach((item, index) => {
-      // Eğer item.title yoksa, boş bir string olarak varsay
-      const title = item.title || ""; // Eğer title yoksa boş bir string atar
-      const hashId = (item.title || "")
+      const hashId = item.title
         .toLowerCase()
         .replace(/\s+/g, "-")
         .replace(/[^\w-]/g, "");
@@ -44,7 +43,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const listItem = document.createElement("li");
       const link = document.createElement("a");
       link.href = `#${hashId}`;
-      link.textContent = `${index + 1}. ${title || "Başlık Yok"}`; // Eğer title boşsa "Başlık Yok" yazar
+      link.textContent = `${index + 1}. ${item.title}`;
       listItem.appendChild(link);
       itemTitles.appendChild(listItem);
     });
@@ -54,7 +53,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       itemContent.innerHTML = `<h2>${item.title}</h2>`; // Ürün başlığı
 
       // Eğer mevzuat sayfasındaysak, akordeon yapısını oluştur
-      if (item.items) {
+      if (pageType === "mevzuat" && item.items) {
         item.items.forEach((subItem) => {
           const accordionContainer = document.createElement("div");
           accordionContainer.classList.add("accordion-section");
@@ -67,16 +66,14 @@ document.addEventListener("DOMContentLoaded", async () => {
           accordionContent.classList.add("accordion-content");
           accordionContent.style.display = "none"; // Başlangıçta kapalı olacak
 
-          if (subItem.pdfFiles) {
-            subItem.pdfFiles.forEach((pdf) => {
-              const pdfLink = document.createElement("a");
-              pdfLink.href = pdf.url;
-              pdfLink.target = "_blank";
-              pdfLink.textContent = pdf.name;
-              pdfLink.classList.add("pdf-link");
-              accordionContent.appendChild(pdfLink);
-            });
-          }
+          subItem.pdfFiles.forEach((pdf) => {
+            const pdfLink = document.createElement("a");
+            pdfLink.href = pdf.url;
+            pdfLink.target = "_blank";
+            pdfLink.textContent = pdf.name;
+            pdfLink.classList.add("pdf-link");
+            accordionContent.appendChild(pdfLink);
+          });
 
           // Akordeon başlığına tıklanınca aç/kapa yap
           accordionHeader.addEventListener("click", () => {
@@ -102,22 +99,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 
     // Hash değişimini dinleyerek ilgili içeriği gösterecek
-    // Hash değişimini dinleyerek ilgili içeriği gösterecek
     function handleHashChange() {
       const hash = window.location.hash.slice(1);
       const selectedItem = data.find(
         (item) =>
-          item.title &&
           item.title
             .toLowerCase()
             .replace(/\s+/g, "-")
             .replace(/[^\w-]/g, "") === hash
       );
-
       if (selectedItem) {
         showItem(selectedItem);
       } else {
-        console.warn("İlgili başlık bulunamadı, ana sayfaya yönlendiriliyor.");
         showMainPage();
       }
     }
