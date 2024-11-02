@@ -3,7 +3,7 @@
 footer {
     position:static;
     bottom:0;
-    background-color:var(--background3-color);
+    background-color:var(--text7-color);
     color: var(--text2-color);
     padding: 20px 0;
     text-align: center;
@@ -75,7 +75,7 @@ footer {
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .footer-section {

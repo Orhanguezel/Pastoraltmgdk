@@ -21,13 +21,8 @@ body {
     overflow-x: hidden;
 }
 
-main {
-    padding: 20px;
-}
-
 h1, h2, h3, h4 {
     color: var(--primary-color);
-    margin: 1rem 0;
 }
 
 h1 { font-size: 2.5rem; }
@@ -39,8 +34,7 @@ a { font-size: 1.2rem;}
 p {
     color: #555;
     font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
+    line-height: 1.2;
 }
 
 button {
