@@ -5,7 +5,7 @@ export function loadCarousel() {
             <!-- Informasyon bölümü -->
             <div class='carousel-inf' id='carousel-inf'>
                 <h2>Tehlikeli Madde Güvenliği Çözümleri</h2>
-                <p>Pastoral TMGD olarak, güvenliğiniz için en yüksek standartlarda danışmanlık hizmeti sunuyoruz.</p>
+                <p>Pastoral TMGDK olarak, güvenliğiniz için en yüksek standartlarda danışmanlık hizmeti sunuyoruz.</p>
                 <a href="teklif.html" class="carousel-button">Teklif İste</a>
             </div>
             
@@ -17,16 +17,16 @@ export function loadCarousel() {
                 <div class='slide' data-title="Tehlikeli Madde Güvenlik Danışmanlığı İçin Güvenilir Adres!" data-text="Mühendislik ilkeleri ile hizmet veren TMGD TR Mühendisliği seçin, güvenle yolunuza devam edin.">
                     <img class='owl-item-bg' src='assets/img/slayt/2.png' alt='Slayt 2'>
                 </div>
-                <div class='slide' data-title="Tehlikeli Madde Danışmanlık Hizmetlerimiz" data-text="Pastoral TMGD, hizmet verdiği tüm işletmelere değer katmaktadır. İhtiyacınıza uygun çözümler sunuyoruz.">
+                <div class='slide' data-title="Tehlikeli Madde Danışmanlık Hizmetlerimiz" data-text="Pastoral TMGDK, hizmet verdiği tüm işletmelere değer katmaktadır. İhtiyacınıza uygun çözümler sunuyoruz.">
                     <img class='owl-item-bg' src='assets/img/slayt/3.png' alt='Slayt 3'>
                 </div>
                 <div class='slide' data-title="Tecrübeli ve Profesyonel" data-text="İşletmenize sizin kadar değer katabilecek ve bilgisiyle katkı sağlayacak uzman TMGD'lerimiz yanınızda.">
                     <img class='owl-item-bg' src='assets/img/slayt/4.png' alt='Slayt 4'>
                 </div>
-                <div class='slide' data-title="Türkiye Genelinde Hizmet" data-text="Pastoral TMGD olarak, Türkiye genelinde her yerde hizmet sunuyoruz.">
+                <div class='slide' data-title="Türkiye Genelinde Hizmet" data-text="Pastoral TMGDK olarak, Türkiye genelinde her yerde hizmet sunuyoruz.">
                     <img class='owl-item-bg' src='assets/img/slayt/5.png' alt='Slayt 5'>
                 </div>
-                <div class='slide' data-title="Güven ve Tecrübe" data-text="Pastoral TMGD tecrübeli kadrosu ile güven vermeye devam ediyor. Tehlikeli madde güvenlik danışmanlığı için bizimle iletişime geçin.">
+                <div class='slide' data-title="Güven ve Tecrübe" data-text="Pastoral TMGDK tecrübeli kadrosu ile güven vermeye devam ediyor. Tehlikeli madde güvenlik danışmanlığı için bizimle iletişime geçin.">
                     <img class='owl-item-bg' src='assets/img/slayt/6.png' alt='Slayt 6'>
                 </div>
             </div>

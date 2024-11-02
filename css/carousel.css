@@ -19,7 +19,7 @@
     letter-spacing: 2px;
     width: 50%;
     background-color: var(--green2-color);
-    padding: 5px !important;
+    padding: 25px !important;
     margin: 0;
     transition: all 0.5s ease-in-out;
     opacity: 1;
@@ -169,7 +169,7 @@
         padding: 5px;
         width: 100%;
         order: 2;
-        height: 270px !important;
+        height: 250px !important;
     }
 
     .carousel-button {
@@ -186,7 +186,7 @@
 
     .radio-buttons {
         position: absolute;
-        bottom: 300px; /* Slaytın alt kenarından 10px yukarıda sabit */
+        bottom: 330px; /* Slaytın alt kenarından 10px yukarıda sabit */
         left: 50%;
         transform: translateX(-50%);
     }
@@ -205,11 +205,11 @@
     .carousel-button {
         position: absolute;
         bottom:10px;
-        left:40%;
+        left:35%;
     }
 
     .radio-buttons {
-        bottom: 240px
+        bottom: 260px
     }
 }
 

@@ -5,7 +5,7 @@ export function loadCertificates() {
         <section class="certificates-section">
             <div class="certificates-title">
                 <h2><i class="fas fa-award"></i> Sertifikalarımız ve Üyeliklerimiz</h2>
-                <p>Pastoral TMGD olarak kalite standartlarımızı belgeleyen sertifikalar ve profesyonel üyeliklerle güvencenizi sağlıyoruz.</p>
+                <p>Pastoral TMGDK olarak kalite standartlarımızı belgeleyen sertifikalar ve profesyonel üyeliklerle güvencenizi sağlıyoruz.</p>
             </div>
             
             <div class="certificates-list">

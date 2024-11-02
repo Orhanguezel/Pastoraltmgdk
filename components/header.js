@@ -11,7 +11,7 @@ export function loadHeader() {
          <header>
             <div class="header-top">
                 <a href="index.html">
-                    <img src="assets/logo.png" alt="Pastoral TMGD Logo" class="header-logo">
+                    <img src="assets/logo.png" alt="Pastoral TMGDK Logo" class="header-logo">
                 </a>
                 <div class="top-links">
                     <a href="#"><i class="fas fa-sitemap"></i> Sitemap</a> 

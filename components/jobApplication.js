@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
             <!-- Bilgilendirme Bölümü -->
             <section class="application-info">
                 <h1>İş Başvurusu</h1>
-                <p>Siz de Pastoral TMGD ekibine katılıp, yeni projelerde yer almak ve gelişmelere öncülük etmek ister misiniz? Başvurular tüm Türkiye geneli için alınmaktadır.</p>
+                <p>Siz de Pastoral TMGDK ekibine katılıp, yeni projelerde yer almak ve gelişmelere öncülük etmek ister misiniz? Başvurular tüm Türkiye geneli için alınmaktadır.</p>
                 <p>Ekibimize katılmak, kendini geliştirmek ve bizlere katkı sağlayacak arkadaşları aramızda görmekten mutluluk duyarız. Yapmanız gereken, sağ taraftaki formu doldurup bize göndermek.</p>
 
-                <h2>Kısaca Pastoral TMGD</h2>
-                <p>Pastoral TMGD, 2020 yılından bu yana Tehlikeli Madde Güvenlik Danışmanlığı alanında Türkiye genelinde başarılı çalışmalar yürütmektedir. Çalışma alanlarımız içerisinde:</p>
+                <h2>Kısaca Pastoral TMGDK</h2>
+                <p>Pastoral TMGDK, 2020 yılından bu yana Tehlikeli Madde Güvenlik Danışmanlığı alanında Türkiye genelinde başarılı çalışmalar yürütmektedir. Çalışma alanlarımız içerisinde:</p>
                 <ul>
                     <li>Tehlikeli Madde Güvenlik Danışmanlığı</li>
                     <li>Yazılım ve Teknoloji Geliştirme</li>

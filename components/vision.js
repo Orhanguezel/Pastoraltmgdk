@@ -4,7 +4,7 @@ export function loadVision() {
         <div class="vision-container">
         <section class="page-title">
             <h2><i class="fas fa-bullseye mission-icon"></i> Misyon ve Vizyon</h2>
-            <p>Pastoral TMGD olarak çevre ve insan sağlığını korumayı önceliğimiz olarak benimsemekteyiz.</p>
+            <p>Pastoral TMGDK olarak çevre ve insan sağlığını korumayı önceliğimiz olarak benimsemekteyiz.</p>
         </section>
         
         <section class="mission-vision-content">

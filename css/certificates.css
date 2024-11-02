@@ -16,7 +16,7 @@
 }
 
 .certificates-title h2 {
-    color: var(--primary-color);
+    color: var(--green2-color);
     font-size: 2.5em;
     margin: 0;
 }
@@ -25,6 +25,10 @@
     color: var(--text-color);
     font-size: 1.2em;
     margin-top: 10px;
+}
+
+.certificates-title i {
+    color: var(--green2-color);
 }
 
 .certificates-list {
@@ -51,7 +55,7 @@
 }
 
 .certificate-card h3 {
-    color: var(--primary-color);
+    color: var(--green2-color);
     margin: 10px 0;
 }
 

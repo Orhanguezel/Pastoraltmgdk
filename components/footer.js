@@ -9,7 +9,7 @@ export function loadFooter() {
       <footer>
           <div class="footer-content">
               <div class="footer-logo">
-                  <img src="assets/logo.png" alt="Pastoral TMGD Logo">
+                  <img src="assets/logo.png" alt="Pastoral TMGDK Logo">
                   <p>Pastoral Tehlikeli Madde Güvenlik Danışmanlık Sanayi ve Ticaret Şti.</p>
               </div>
               <div class="footer-links">
@@ -36,7 +36,7 @@ export function loadFooter() {
               </div>
           </div>
           <div class="footer-bottom">
-              <p>&copy; 2024 Pastoral TMGD. Tüm hakları saklıdır.</p>
+              <p>&copy; 2024 Pastoral TMGDK. Tüm hakları saklıdır.</p>
           </div>
           <!-- Designed by Link -->
           <a href="https://www.guezelwebdesign.com" target="_blank" rel="noopener noreferrer" class="designed-by-link">
