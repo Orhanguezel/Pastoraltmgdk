@@ -1,140 +1,144 @@
-import { articles } from '../data/articles-data.js';
-import { materials } from '../data/materials-data.js';
-import { news } from '../data/news-data.js';
-import { products } from '../data/products-data.js';
+// Mevcut veri kaynaklarını import ediyoruz
+import { mevzuatData } from '../data/mevzuat-data.js';
+import { sektorlerData } from '../data/sektorler-data.js';
+import { servicesData } from '../data/services-data.js';
 
-const allData = [...articles, ...materials, ...news, ...products];
+// Tüm verileri birleştiriyoruz
+const allData = [...mevzuatData, ...sektorlerData, ...servicesData];
 
+// HTML öğelerini seçiyoruz
 const searchInput = document.getElementById("search-input");
 const searchButton = document.getElementById("search-button");
 const searchResults = document.getElementById("search-results");
 
 document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("search-input");
-    const searchButton = document.getElementById("search-button");
-    const searchResults = document.getElementById("search-results");
+    if (searchButton && searchResults) {
+        searchButton.addEventListener("click", performSearch);
+    }
+
+    function performSearch() {
+      const searchTerm = searchInput.value.trim().toLowerCase();
+      searchResults.innerHTML = ""; // Önceki sonuçları temizle
   
-    // Import relevant data
-    import("../data/articles-data.js").then(module => {
-      const articles = module.articles;
-      import("../data/materials-data.js").then(module => {
-        const materials = module.materials;
-        import("../data/products-data.js").then(module => {
-          const products = module.products;
-          import("../data/news-data.js").then(module => {
-            const news = module.news;
+      if (searchTerm === "") {
+          searchResults.innerHTML = "<p>Lütfen bir arama terimi giriniz.</p>";
+          return;
+      }
   
-            // Combine all data
-            const allData = [...articles, ...materials, ...products, ...news];
+      // Arama terimini localStorage'a kaydediyoruz
+      localStorage.setItem("searchTerm", searchTerm);
   
-            if (searchButton && searchResults) {
-              searchButton.addEventListener("click", performSearch);
-            }
+      // Veriyi filtreliyoruz (arama işlemi)
+      const results = allData.flatMap(data => {
+          if (data.items) {
+              // 'items' dizisindeki alt başlıkları filtrele
+              return data.items.filter(item =>
+                  (item.title && item.title.toLowerCase().includes(searchTerm)) ||
+                  (item.pdf && item.pdf.toLowerCase().includes(searchTerm))
+              ).map(item => ({ ...item, category: data.title }));
+          } else if (data.subItems) {
+              // 'subItems' dizisindeki alt başlıkları filtrele
+              return data.subItems.filter(subItem =>
+                  (subItem.title && subItem.title.toLowerCase().includes(searchTerm)) ||
+                  (subItem.pdf && subItem.pdf.toLowerCase().includes(searchTerm))
+              ).map(subItem => ({ ...subItem, category: data.subtitle }));
+          } else if (data.title && data.content) {
+              // Eğer sadece başlık ve içerik varsa
+              return (data.title.toLowerCase().includes(searchTerm) ||
+                      data.content.toLowerCase().includes(searchTerm))
+                  ? [data]
+                  : [];
+          } else {
+              return [];
+          }
+      });
   
-            function performSearch() {
-              const searchTerm = searchInput.value.trim().toLowerCase();
-              searchResults.innerHTML = ""; // Clear previous results
+      // Arama sonuçlarını ekrana basıyoruz
+      if (results.length > 0) {
+          results.forEach(result => {
+              const resultItem = document.createElement("div");
+              resultItem.classList.add("search-result-item");
   
-              if (searchTerm === "") {
-                searchResults.innerHTML = "<p>Bitte geben Sie ein Suchbegriff ein.</p>";
-                return;
-              }
+              // Arama terimini vurguluyoruz
+              let contentSnippet = result.content
+                  ? result.content.substring(0, 100)
+                  : "Dosya: " + result.pdf;
+              const highlightRegex = new RegExp(`(${searchTerm})`, "gi");
+              contentSnippet = contentSnippet.replace(highlightRegex, `<span class="highlight">$1</span>`);
   
-              // Store the search term in localStorage
-              localStorage.setItem("searchTerm", searchTerm);
+              const hashId = result.title.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "");
   
-              // Filter the data (search)
-              const results = allData.filter(item =>
-                item.title.toLowerCase().includes(searchTerm) ||
-                item.content.toLowerCase().includes(searchTerm)
-              );
+              resultItem.innerHTML = `
+                  <h3><a href="#${hashId}" class="search-link">${result.title}</a></h3>
+                  <p>${contentSnippet}...</p>
+                  <p>Kategori: ${result.category || "Diğer"}</p>
+              `;
   
-              if (results.length > 0) {
-                results.forEach(result => {
-                  const resultItem = document.createElement("div");
-                  resultItem.classList.add("search-result-item");
+              searchResults.appendChild(resultItem);
+          });
   
-                  // Highlight the search term
-                  let contentSnippet = result.content.substring(0, 100);
-                  const highlightRegex = new RegExp(`(${searchTerm})`, "gi");
-                  contentSnippet = contentSnippet.replace(highlightRegex, `<span class="highlight">$1</span>`);
+          // Linklere tıklama özelliği ekliyoruz
+          const searchLinks = document.querySelectorAll(".search-link");
+          searchLinks.forEach(link => {
+              link.addEventListener("click", (event) => {
+                  event.preventDefault();
+                  const hash = link.getAttribute("href").slice(1);
+                  window.location.hash = hash;
+                  handleHashChange();
+              });
+          });
+      } else {
+          searchResults.innerHTML = "<p>Hiçbir sonuç bulunamadı.</p>";
+      }
+  }
   
-                  const hashId = result.title.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "");
-  
-                  resultItem.innerHTML = `
-                    <h3><a href="#${hashId}" class="search-link">${result.title}</a></h3>
-                    <p>${contentSnippet}...</p>
-                  `;
-  
-                  searchResults.appendChild(resultItem);
-                });
-  
-                // Make links clickable
-                const searchLinks = document.querySelectorAll(".search-link");
-                searchLinks.forEach(link => {
-                  link.addEventListener("click", (event) => {
-                    event.preventDefault();
-                    const hash = link.getAttribute("href").slice(1);
-                    window.location.hash = hash;
-                    handleHashChange();
-                  });
-                });
-              } else {
-                searchResults.innerHTML = "<p>Keine Ergebnisse gefunden.</p>";
-              }
-            }
-  
-            // Monitor hash changes and display the corresponding content
-            function handleHashChange() {
-              const hash = window.location.hash.slice(1);
-              const selectedItem = allData.find(
-                (item) =>
-                  item.title
-                    .toLowerCase()
-                    .replace(/\s+/g, "-")
-                    .replace(/[^\w-]/g, "") === hash
-              );
-              if (selectedItem) {
-                showItem(selectedItem);
-              } else {
-                showMainPage();
-              }
-            }
-  
-            // Show the content of the selected item and highlight the search term
-            function showItem(item) {
-              if (!searchResults) {
-                console.error("Search results element not found.");
-                return;
-              }
-  
-              let contentHTML = `<h2>${item.title}</h2>` + item.content;
-  
-              // Highlight the search term
-              const searchTerm = localStorage.getItem("searchTerm");
-              if (searchTerm) {
-                const highlightRegex = new RegExp(`(${searchTerm})`, "gi");
-                contentHTML = contentHTML.replace(
-                  highlightRegex,
-                  `<span class="highlight">$1</span>`
-                );
-              }
-  
-              searchResults.innerHTML = contentHTML;
-            }
-  
-            // Show the main page
-            function showMainPage() {
-              searchResults.innerHTML = "<p>Bitte geben Sie ein Suchbegriff ein, um zu suchen.</p>";
-            }
-  
-            // Show the corresponding content if a hash is present when the page loads
-            handleHashChange();
-  
-            // Monitor hash changes
-            window.addEventListener("hashchange", handleHashChange);
-          }).catch(error => console.error("Could not load news data:", error));
-        }).catch(error => console.error("Could not load product data:", error));
-      }).catch(error => console.error("Could not load material data:", error));
-    }).catch(error => console.error("Could not load article data:", error));
-  });
+    // Hash değişikliklerini izleyin ve ilgili içeriği gösterin
+function handleHashChange() {
+  const hash = window.location.hash.slice(1);
+  const selectedItem = allData.find(
+      (item) =>
+          item.title &&
+          item.title.toLowerCase().replace(/\s+/g, "-").replace(/[^\w-]/g, "") === hash
+  );
+
+  if (selectedItem) {
+      showItem(selectedItem);
+  } else {
+      showMainPage();
+  }
+}
+
+// Seçilen öğenin içeriğini göster ve arama terimini vurgula
+function showItem(item) {
+  if (!searchResults) {
+      console.error("Arama sonuçları öğesi bulunamadı.");
+      return;
+  }
+
+  let contentHTML = `<h2>${item.title}</h2><p>${item.content || ''}</p>`;
+
+  // Arama terimini vurgulama
+  const searchTerm = localStorage.getItem("searchTerm");
+  if (searchTerm) {
+      const highlightRegex = new RegExp(`(${searchTerm})`, "gi");
+      contentHTML = contentHTML.replace(
+          highlightRegex,
+          `<span class="highlight">$1</span>`
+      );
+  }
+
+  searchResults.innerHTML = contentHTML;
+}
+
+
+    // Ana sayfayı göster
+    function showMainPage() {
+        searchResults.innerHTML = "<p>Aramak için bir terim giriniz.</p>";
+    }
+
+    // Sayfa yüklendiğinde hash varsa ilgili içeriği göster
+    handleHashChange();
+
+    // Hash değişikliklerini izleyin
+    window.addEventListener("hashchange", handleHashChange);
+});

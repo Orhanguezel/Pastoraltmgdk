@@ -15,7 +15,7 @@ export function loadHeader() {
                 </a>
                 <div class="top-links">
                     <a href="#"><i class="fas fa-sitemap"></i> Sitemap</a> 
-                    <a href="#"><i class="fas fa-search"></i> Arama</a>
+                    <a href="arama.html"><i class="fas fa-search"></i> Arama</a>
                 </div>
                 <div class="mobile-menu-button" id="menu-toggle">
                     <span class="bar"></span>
