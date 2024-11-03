@@ -1,4 +1,3 @@
-// jobApplication.js
 document.addEventListener("DOMContentLoaded", () => {
     const contentArea = document.getElementById("jobApplication");
 
@@ -24,14 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     <li>Tehlikeli Madde Güvenlik Danışmanlığı Belgesine sahip olmak</li>
                     <li>MS Office programlarını iyi derecede kullanabilmek</li>
                     <li>Performans odaklı, temsil ve ikna yeteneği güçlü</li>
-                </ul>
-
-                <h2>İşin Tanımı</h2>
-                <ul>
-                    <li>Mevcut ve potansiyel müşterilere danışmanlık hizmeti sağlamak</li>
-                    <li>Müşteri portföyü oluşturmak ve geliştirmek</li>
-                    <li>Pazarlama faaliyetleri ile marka bilinirliğini artırmak</li>
-                    <li>Tehlikeli Madde Güvenlik Danışmanlığı sertifikasına sahip adaylar tercih edilecektir.</li>
                 </ul>
             </section>
 
@@ -65,20 +56,16 @@ document.addEventListener("DOMContentLoaded", () => {
                     </div>
                     <div class="form-group">
                         <label>Aktif araç kullanıyor musunuz?</label>
-                        <div>
-                            <input type="radio" id="yes-driving" name="driving" value="yes">
-                            <label for="yes-driving">Evet</label>
-                            <input type="radio" id="no-driving" name="driving" value="no">
-                            <label for="no-driving">Hayır</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="driving" value="Evet" required> Evet</label>
+                            <label><input type="radio" name="driving" value="Hayır"> Hayır</label>
                         </div>
                     </div>
                     <div class="form-group">
                         <label>TMGD belgeniz var mı?</label>
-                        <div>
-                            <input type="radio" id="yes-tmgd" name="tmgd" value="yes">
-                            <label for="yes-tmgd">Evet</label>
-                            <input type="radio" id="no-tmgd" name="tmgd" value="no">
-                            <label for="no-tmgd">Hayır</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="tmgd" value="Evet" required> Evet</label>
+                            <label><input type="radio" name="tmgd" value="Hayır"> Hayır</label>
                         </div>
                     </div>
                     <div class="form-group">

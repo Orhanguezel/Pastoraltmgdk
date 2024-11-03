@@ -58,7 +58,7 @@ export function loadHeader() {
                     </li>
                     <li class="pastoral-dropdown">
                         <a href="javascript:void(0);" class="pastoral-nav-button" id="hizmetler">
-                            <i class="fas fa-briefcase"></i> Hizmetlerimiz
+                            <i class="fas fa-briefcase"></i> Hizmetler
                         </a>
                         <div class="pastoral-dropdown-content">
                             <div class="pastoral-dropdown-row">
@@ -121,8 +121,8 @@ export function loadHeader() {
                                         <li><a href="#" class="upper-level">Diğer</a>
                                             <ul>
                                                 <li><a href="basvuru.html">İş Başvuru Formu</a></li>
-                                                <li><a href="#">Teklif İsteyiniz</a></li>
-                                                <li><a href="sss.html">Sıkça Sorulan Sorular</a></li>
+                                                <li><a href="teklif.html">Teklif İsteyiniz</a></li>
+                                                <li><a href="sss.html">Sık Sorulan Sorular</a></li>
                                                 <li><a href="#">Cezalar</a></li>
                                                 <li><a href="#">Fiyatlandırma</a></li>
                                             </ul>
