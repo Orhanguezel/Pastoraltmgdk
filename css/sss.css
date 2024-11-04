@@ -12,56 +12,63 @@
     text-align: center;
     margin-bottom: 40px;
     color: var(--primary-color);
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
+/* Soru-Cevap Kartları */
 .faq-item {
-
     background-color: var(--text5-color);
     border: 1px solid var(--text5-color);
-    padding: 15px 20px;
+    padding: 20px;
+    border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     overflow: hidden;
     box-sizing: border-box;
 }
 
 .faq-item:hover {
     background-color: var(--background2-color);
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .faq-question {
     font-weight: bold;
     color: var(--text-color);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     display: flex;
     align-items: center;
-}
-.faq-item:hover .faq-question{
-    color: var(--text-color);
+    justify-content: space-between;
 }
 
+.faq-item:hover .faq-question {
+    color: var(--primary-color);
+}
+
+/* İkonlar için dönüş efekti */
 .faq-icon {
     margin-right: 10px;
     transition: transform 0.3s ease;
     font-size: 1.5rem;
 }
 
+.faq-item.open .faq-icon {
+    transform: rotate(90deg);
+}
+
+/* Yanıtların Görünümü */
 .faq-answer {
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+    transition: max-height 0.5s ease;
     max-height: 0;
     margin-top: 10px;
     color: var(--text-color);
+    text-align: start;
     font-size: 1rem;
     line-height: 1.6;
-}
-
-.faq-item:hover .faq-answer {
-    color: var(--text-color);
+    padding: 0 5px;
 }
 
 /* Açık yanıtlar */
@@ -69,13 +76,47 @@
     max-height: 100%;
 }
 
+/* Hover halinde soru rengi */
+.faq-item:hover .faq-answer {
+    color: var(--text-color);
+}
+
 /* Mobil uyumluluk */
 @media (max-width: 768px) {
     #faq-section {
-        padding: 20px;
+        padding: 15px;
+    }
+
+    #faq-section h1 {
+        font-size: 2rem;
     }
 
     .faq-item {
-        width: 100%;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .faq-question {
+        font-size: 1.1rem;
+    }
+
+    .faq-answer {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+/* Daha küçük ekranlar için */
+@media (max-width: 480px) {
+    .faq-question {
+        font-size: 1rem;
+    }
+
+    .faq-answer {
+        font-size: 0.9rem;
+    }
+
+    .faq-icon {
+        font-size: 1.3rem;
     }
 }

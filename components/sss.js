@@ -1,83 +1,171 @@
 const faqData = [
     {
-        question: "TMGDK nedir?",
-        answer: "Tehlikeli Madde Güvenlik Danışmanlık Kuruluşu (TMGDK), tehlikeli maddelerin taşınması, depolanması ve elleçlenmesi süreçlerinde güvenlik önlemlerini sağlamak ve denetlemek için danışmanlık hizmeti sunan kuruluşlardır."
+        question: "Tehlikeli Madde Taşımacılığı nedir?",
+        answer: "Tehlikeli madde taşımacılığı, çevre, insan sağlığı ve güvenliği için risk taşıyan maddelerin belirlenen kurallar çerçevesinde güvenli bir şekilde taşınması sürecidir."
     },
     {
-        question: "TMGD kimdir ve ne iş yapar?",
-        answer: "Tehlikeli Madde Güvenlik Danışmanı (TMGD), tehlikeli maddelerle ilgili riskleri minimize etmek için işletmelere güvenlik önlemleri konusunda danışmanlık yapar. TMGD, TMGDK bünyesinde çalışabilir veya bağımsız olarak hizmet verebilir."
+        question: "Tehlikeli Madde Faaliyet Belgesi Düzenlenmesine İlişkin Usul Ve Esaslar Hakkında Yönergenin Amacı Nedir?",
+        answer: "Bu yönerge, tehlikeli maddelerle ilgili faaliyetlerin güvenli ve düzenli bir şekilde yapılması için gerekli kuralları ve uygulama esaslarını belirler."
     },
     {
-        question: "TMGDK'nın sunduğu hizmetler nelerdir?",
-        answer: "TMGDK; eğitim, denetim, risk değerlendirmesi, acil durum yönetimi ve güvenlik raporlarının hazırlanması gibi hizmetler sunar."
+        question: "Tehlikeli Madde Faaliyet Belgesi kimleri kapsar?",
+        answer: "Bu belge, tehlikeli madde taşımacılığı, depolanması veya işlenmesi gibi faaliyetlerde bulunan işletmeleri kapsar."
     },
     {
-        question: "TMGDK danışmanlığı zorunlu mu?",
-        answer: "Türkiye'de tehlikeli madde taşıyan, depolayan veya elleçleyen işletmeler için TMGDK danışmanlığı zorunludur. Bu zorunluluk, işletmelerin güvenlik standartlarına uygun hareket etmesini sağlar."
+        question: "Kimleri kapsamaz?",
+        answer: "Tehlikeli maddeyle ilgisi olmayan ve belirli risk seviyelerinin altında faaliyet gösteren işletmeleri kapsamaz."
     },
     {
-        question: "TMGD hizmeti nasıl alınır?",
-        answer: "TMGD hizmeti almak için lisanslı bir TMGDK ile iletişime geçebilir veya bağımsız TMGD'lerden hizmet alabilirsiniz."
+        question: "Tehlikeli Madde Faaliyet Belgesi Düzenlenmesine İlişkin Usul Ve Esaslar Hakkında Yönergenin dayanağı nedir?",
+        answer: "Yönerge, tehlikeli maddelerin taşınması ve güvenliği için ulusal ve uluslararası düzenlemelere dayanarak hazırlanmıştır."
     },
     {
-        question: "Tehlikeli maddeler nelerdir?",
-        answer: "Tehlikeli maddeler; insan sağlığı, çevre veya malzeme güvenliği açısından risk oluşturan kimyasallar, patlayıcılar, yanıcı ve korozif maddeler gibi sınıflandırmalardır."
+        question: "Tehlikeli madde faaliyet belgesi alma zorunluluğu olan işletmeler hangileridir?",
+        answer: "Yılda 50 ton ve üzeri tehlikeli maddeyle ilgilenen veya yüksek riskli sınıflardaki maddelerle (Sınıf 1, Sınıf 6.2, Sınıf 7) çalışan işletmeler bu belgeyi almak zorundadır."
     },
     {
-        question: "TMGDK hizmet ücreti ne kadar?",
-        answer: "TMGDK hizmet ücretleri, verilen hizmetin kapsamına, işletmenin büyüklüğüne ve risk seviyesine göre değişiklik gösterir. Ücretler hakkında detaylı bilgi almak için bir TMGDK ile iletişime geçebilirsiniz."
+        question: "Herhangi bir işlem miktarı olmadan tehlikeli madde faaliyet belgesi alması zorunlu olanlar kimlerdir?",
+        answer: "Sınıf 1 (Patlayıcılar), Sınıf 6.2 (Bulaşıcı Maddeler) ve Sınıf 7 (Radyoaktif Maddeler) ile çalışan işletmeler, miktardan bağımsız olarak belge almak zorundadır."
     },
     {
-        question: "TMGD eğitimleri nelerdir?",
-        answer: "TMGD eğitimleri; tehlikeli maddelerin taşınması, depolanması ve güvenli elleçlenmesi gibi konuları kapsayan eğitim programlarıdır. Bu eğitimler TMGD olabilmek için gereklidir."
+        question: "İşletmeler tehlikeli madde faaliyet belgesi almak için hangi evrakları hazırlamalıdır?",
+        answer: "Başvuru formu, faaliyet tespit raporu, tehlikeli madde envanter bilgileri ve yetkili TMGDK'den alınmış hizmet sözleşmesi gereklidir."
     },
     {
-        question: "TMGD sertifikası nasıl alınır?",
-        answer: "TMGD sertifikası almak için TMGD eğitimini tamamlamanız ve sonrasında Bakanlık tarafından yapılan sınavda başarılı olmanız gerekmektedir."
+        question: "Tehlikeli Madde Faaliyet Belgesi’nin ücreti nedir?",
+        answer: "Ücret, bakanlık tarafından belirlenir ve işletmenin büyüklüğüne, faaliyet kapsamına göre değişir."
     },
     {
-        question: "TMGDK ile TMGD arasındaki fark nedir?",
-        answer: "TMGDK, tehlikeli madde güvenlik danışmanlığı hizmeti sunan bir kuruluştur. TMGD ise bu kuruluşa bağlı veya bağımsız olarak çalışan ve danışmanlık yapan kişidir."
+        question: "İşletmelerin faaliyet belgesi nasıl düzenlenir?",
+        answer: "Faaliyet belgesi, gerekli evrakların bakanlığa sunulması ve başvurunun onaylanması ile düzenlenir."
     },
     {
-        question: "TMGDK hangi sektörlere hizmet verir?",
-        answer: "TMGDK; kimya, lojistik, petrol, madencilik, ilaç, otomotiv ve gıda gibi birçok sektöre hizmet verir."
+        question: "Belge sahiplerinin yükümlülükleri nelerdir?",
+        answer: "Belge sahipleri, tehlikeli maddelerle ilgili tüm güvenlik önlemlerini almak, gerekli eğitimleri sağlamak ve düzenli denetimleri gerçekleştirmek zorundadır."
     },
     {
-        question: "Tehlikeli madde güvenlik planı nedir?",
-        answer: "Tehlikeli madde güvenlik planı, işletmenin tehlikeli maddelere dair riskleri belirlemesi ve bu riskleri minimize etmek için aldığı önlemleri kapsayan bir plandır."
+        question: "Belge sahiplerinin faaliyetlerinin durdurulması veya belge iptali nasıl olmaktadır?",
+        answer: "Belge sahipleri, mevzuata aykırı hareket ettiklerinde veya güvenlik ihlalleri tespit edildiğinde faaliyetleri durdurulabilir veya belgeleri iptal edilebilir."
     },
     {
-        question: "TMGD'nin görev ve sorumlulukları nelerdir?",
-        answer: "TMGD'nin görevleri arasında tehlikeli madde taşımacılığı süreçlerini denetlemek, güvenlik planlarını incelemek, rapor hazırlamak ve işletmeye tavsiyelerde bulunmak vardır."
+        question: "Yasal mevzuat mevcut mudur?",
+        answer: "Evet, tehlikeli madde taşımacılığı ile ilgili ulusal ve uluslararası birçok mevzuat bulunmaktadır. ADR gibi düzenlemeler bu mevzuatlara örnektir."
     },
     {
-        question: "Tehlikeli madde taşımacılığında ADR nedir?",
-        answer: "ADR, Avrupa ülkeleri arasında tehlikeli madde taşımacılığı için kabul edilmiş bir düzenlemedir. ADR, taşınan tehlikeli maddelerin güvenliğini sağlamak için standartlar ve kurallar belirler."
+        question: "Mevzuatın amacı nedir?",
+        answer: "Mevzuatın amacı, tehlikeli madde taşımacılığı ve işlemleri sırasında insan sağlığı, çevre ve mal güvenliğini korumaktır."
     },
     {
-        question: "TMGDK denetimleri nasıl yapılır?",
-        answer: "TMGDK denetimleri, işletmenin tehlikeli madde işlemleri için gerekli güvenlik önlemlerini alıp almadığını değerlendiren planlı veya ani denetimler şeklinde yapılır."
+        question: "Tebliğ kimleri kapsar?",
+        answer: "Tebliğ, tehlikeli madde taşıma, depolama ve işleme faaliyetleri yürüten tüm işletmeleri kapsar."
     },
     {
-        question: "TMGD'nin çalıştığı şirketler hangi yükümlülüklere tabidir?",
-        answer: "TMGD'nin hizmet verdiği şirketler, tehlikeli madde işlemleri için güvenlik standartlarına uymak, gerekli belgeleri hazırlamak ve TMGD raporlarını dikkate almak zorundadır."
+        question: "Tebliğ kimleri kapsamaz?",
+        answer: "Tebliğ, tehlikeli madde taşımacılığı veya işlenmesi ile ilgisi olmayan işletmeleri kapsamaz."
     },
     {
-        question: "TMGDK hangi mevzuata göre çalışır?",
-        answer: "TMGDK, Türkiye'de tehlikeli madde taşımacılığına ilişkin ulusal mevzuata ve uluslararası düzenlemelere (ADR) uygun olarak faaliyet gösterir."
+        question: "Kimler TMGD olabilir?",
+        answer: "Tehlikeli Madde Güvenlik Danışmanı (TMGD) olmak isteyen kişiler, bakanlık tarafından yetkilendirilmiş eğitimleri tamamlayarak sınavda başarılı olmalıdır."
     },
     {
-        question: "TMGD raporu nedir?",
-        answer: "TMGD raporu, tehlikeli madde güvenliği ile ilgili işletmede yapılan denetimler sonucu hazırlanan bir değerlendirme raporudur. Bu raporda güvenlik önlemlerinin durumu ve tavsiyeler yer alır."
+        question: "Tehlikeli madde güvenlik danışmanı sertifikası nedir?",
+        answer: "TMGD sertifikası, tehlikeli madde taşımacılığı ve işlemleri hakkında uzman danışmanlık yapma yetkisini sağlayan bir belgedir."
     },
     {
-        question: "TMGD sertifikası geçerlilik süresi ne kadardır?",
-        answer: "TMGD sertifikası 5 yıl geçerlidir. Sertifika süresi dolduğunda TMGD, yeniden sınava girerek sertifikasını yenilemelidir."
+        question: "Kimler taşımacı olabilir?",
+        answer: "Yasal yükümlülükleri yerine getiren, gerekli belgeleri olan ve tehlikeli madde taşımacılığı eğitimini tamamlamış kişiler taşımacı olabilir."
     },
     {
-        question: "TMGDK ve TMGD hizmetleri neden önemlidir?",
-        answer: "TMGDK ve TMGD hizmetleri, tehlikeli madde işlemlerinde güvenliği artırmak, riskleri minimize etmek ve yasal yükümlülüklere uyumu sağlamak için kritik öneme sahiptir."
+        question: "TMGD ne tür bir sistem kullanır?",
+        answer: "TMGD, tehlikeli madde işlemlerinin güvenli bir şekilde gerçekleştirilmesi için risk değerlendirmesi, güvenlik planları ve düzenli denetim sistemleri kullanır."
+    },
+    {
+        question: "Eğitim ve eğitim kuruluşunun zorunlulukları neler?",
+        answer: "TMGD eğitimini sunan kuruluşlar, bakanlık onaylı olmalı ve eğitim müfredatını ilgili mevzuata uygun olarak vermelidir."
+    },
+    {
+        question: "Yangın eğitimini kimler verebilir?",
+        answer: "Yangın eğitimi, yangın güvenliği alanında yetkili kişiler veya kuruluşlar tarafından verilmelidir."
+    },
+    {
+        question: "ADR danışmanı nasıl olunur?",
+        answer: "ADR danışmanı olmak için tehlikeli madde eğitimi almalı ve bakanlık tarafından yapılan sertifikasyon sınavında başarılı olunmalıdır."
+    },
+    {
+        question: "TMGD adayının toplaması gereken belgeler nelerdir?",
+        answer: "Kimlik belgesi, eğitim sertifikası, başvuru formu ve diğer gerekli belgeler toplanmalıdır."
+    },
+    {
+        question: "Belgelerin geçerliliği ne kadardır? Belge yenileme nasıl olur?",
+        answer: "TMGD sertifikası 5 yıl geçerlidir ve yenileme için yeniden sınav gereklidir."
+    },
+    {
+        question: "TMGD'nin yükümlülükleri nelerdir?",
+        answer: "TMGD, tehlikeli madde işlemlerinde güvenliği sağlamak, raporlar hazırlamak ve işletmelere rehberlik etmekle yükümlüdür."
+    },
+    {
+        question: "Tehlikeli madde eğiticilerinin sınavdan kaç alması gerekmektedir?",
+        answer: "Tehlikeli madde eğiticilerinin sınavdan başarılı olabilmesi için en az 70 puan alması gereklidir."
+    },
+    {
+        question: "Belge ücreti ne kadardır?",
+        answer: "Belge ücretleri, bakanlık tarafından belirlenir ve yıllık olarak güncellenebilir."
+    },
+    {
+        question: "Belge iptali nasıl olur?",
+        answer: "Belge, mevzuata aykırı faaliyetlerde bulunulduğunda veya güvenlik ihlalleri tespit edildiğinde iptal edilebilir."
+    },
+    {
+        question: "Ocak 2018'e kadar muaf olanlar dikkat?",
+        answer: "2018 öncesinde bazı muafiyetler geçerliydi, ancak son düzenlemelerle birlikte birçok muafiyet kaldırılmıştır."
+    },
+    {
+        question: "Eğitim müfredatı nasıl olmaktadır?",
+        answer: "TMGD eğitimi, tehlikeli maddelerin taşınması, depolanması ve güvenli elleçlenmesi konularını kapsayan bir müfredatla yürütülmektedir."
+    },
+    {
+        question: "TMGD denetimlerini hangi kurumlar yapmaktadır?",
+        answer: "Bakanlık ve yetkilendirilmiş TMGDK’lar, işletmelerin mevzuata uyumluluğunu denetler."
+    },
+    {
+        question: "İdari para cezası tespitini kimler yapabilir?",
+        answer: "İdari para cezası, bakanlık veya yetkilendirilmiş denetim kuruluşları tarafından tespit edilebilir."
+    },
+    {
+        question: "Tehlikeli madde güvenlik danışmanı ile çalışılacak ana konular?",
+        answer: "Danışmanla çalışılacak konular; güvenlik planları, acil durum yönetimi, risk değerlendirmesi ve raporlamadır."
+    },
+    {
+        question: "Kimyasallarla Çalışan İşletmelerde Tedarikçilerden Talep Edilecek Evrak Listesi nelerdir?",
+        answer: "Kimyasal malzemeler için güvenlik bilgi formu, taşıma belgesi ve uygunluk belgeleri talep edilmelidir."
+    },
+    {
+        question: "ADR'de Taşınması Yasak Olan Maddeler Nelerdir?",
+        answer: "ADR’ye göre radyoaktif ve patlayıcı gibi yüksek riskli bazı maddelerin taşınması kısıtlanmıştır."
+    },
+    {
+        question: "Patlayıcı Kullanım İzni Nereden Alınır?",
+        answer: "Patlayıcı kullanım izinleri, Çevre ve Şehircilik Bakanlığı'ndan veya ilgili belediyelerden alınır."
+    },
+    {
+        question: "Güvenlik Planı Nedir? Güvenlik Planı Neden Hazırlanmalıdır?",
+        answer: "Güvenlik planı, tehlikeli maddelerle çalışırken güvenliği sağlamak amacıyla hazırlanan bir plandır."
+    },
+    {
+        question: "Tehlikeli Madde Kaza Raporu Nedir? Hangi Hallerde Hazırlanır?",
+        answer: "Tehlikeli Madde Kaza Raporu, kaza durumlarında güvenlik önlemlerini değerlendirmek için hazırlanır."
+    },
+    {
+        question: "ADR kapsamında verilen belgeler nelerdir?",
+        answer: "ADR kapsamında tehlikeli madde taşıma belgesi, sürücü eğitim belgesi ve araç uygunluk belgeleri verilir."
+    },
+    {
+        question: "Tehlikeli Madde Taşıyan Araçların Park Yerleri Neresi Olmalıdır?",
+        answer: "Tehlikeli madde taşıyan araçların güvenli park yerleri için belirlenmiş alanlar kullanılmalıdır."
+    },
+    {
+        question: "Tehlike Önceliği Tablosu Ne İşe Yarar?",
+        answer: "Bu tablo, tehlikeli maddelerin sınıflandırılmasını ve risk önceliklerinin belirlenmesini sağlar."
     }
 ];
 

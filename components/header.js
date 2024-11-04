@@ -42,11 +42,6 @@ export function loadHeader() {
                                             <ul>
                                                 <li><a href="${linkPrefix}#vision">Misyonumuz ve Vizyonumuz</a></li>
                                                 <li><a href="${linkPrefix}#quality">Kalite Politikamız</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#" class="upper-level">Faaliyetlerimiz</a>
-                                            <ul>
-                                                <li><a href="#">Çalışma Alanları</a></li>
                                                 <li><a href="${linkPrefix}#certificates">Sertifikalarımız ve Üyeliklerimiz</a></li>
                                             </ul>
                                         </li>
