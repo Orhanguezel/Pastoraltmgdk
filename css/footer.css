@@ -19,7 +19,8 @@ footer {
   }
   
   .footer-logo img {
-    max-width: 120px;
+    content: url('../assets/2.png'); /* Desktop logo */
+    max-width: 150px;
   }
 
   .footer-logo p {

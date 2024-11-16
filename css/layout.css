@@ -18,7 +18,6 @@ body {
     background-color: var(--background-color);
     box-sizing: border-box;
     position: relative; /* Arka planın üstüne içerik eklemek için konumlandırmayı relative yapıyoruz */
-    overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
