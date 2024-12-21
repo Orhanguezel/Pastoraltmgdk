@@ -1,5 +1,12 @@
 export function loadVision() {
-    const visionSection = document.getElementById('vision');
+    console.log("loadVision çağrıldı.");
+    const visionSection = document.getElementById("vision");
+    if (!visionSection) {
+        console.warn("Vision elementi bulunamadı.");
+        return;
+    }
+
+    console.log("Vision elementi bulundu, içeriği yükleniyor...");
     visionSection.innerHTML = `
         <div class="vision-container">
         <section class="page-title">
@@ -19,5 +26,6 @@ export function loadVision() {
         </section>
         </div>
     `;
+    console.log("Vision içeriği başarıyla yüklendi.");
 }
 

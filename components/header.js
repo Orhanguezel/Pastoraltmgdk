@@ -1,13 +1,18 @@
+import { loadCarousel } from "./carousel.js";
+
+
 export function loadHeader() {
-  const header = document.getElementById("header");
+    const header = document.getElementById("header");
+    if (!header) {
+        console.warn("Header elementi bulunamadı. Bu sayfa header içermiyor olabilir.");
+        return;
+    }
 
-  // Şu anki sayfanın adını belirleyin
-  const currentPage = window.location.pathname.split("/").pop();
+    const currentPage = window.location.pathname.split("/").pop();
+    const linkPrefix = currentPage === "index.html" || currentPage === "" ? "" : "./";
 
-  // Sayfaya göre farklı linkler tanımlayın
-  const linkPrefix = currentPage === "index.html" ? "" : "index.html";
-
-  header.innerHTML = `
+    // Header HTML içeriğini ayarla
+    header.innerHTML = `
          <header>
             <div class="header-top">
                 <a href="index.html">
@@ -131,47 +136,56 @@ export function loadHeader() {
           </header>
       `;
 
-  // FontAwesome İkonları dahil et
-  const fontAwesomeLink = document.createElement("link");
-  fontAwesomeLink.rel = "stylesheet";
-  fontAwesomeLink.href =
-    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
-  document.head.appendChild(fontAwesomeLink);
+   // FontAwesome İkonları dahil et
+   const fontAwesomeLink = document.createElement("link");
+   fontAwesomeLink.rel = "stylesheet";
+   fontAwesomeLink.href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
+   document.head.appendChild(fontAwesomeLink);
 
-  // Dropdown menüyü hover olayına göre aç/kapat
-  const dropdownItems = document.querySelectorAll(".pastoral-dropdown");
-  dropdownItems.forEach((dropdown) => {
-    const content = dropdown.querySelector(".pastoral-dropdown-content");
+   // Dropdown menüyü hover olayına göre aç/kapat
+   const dropdownItems = document.querySelectorAll(".pastoral-dropdown");
+   dropdownItems.forEach((dropdown) => {
+       const content = dropdown.querySelector(".pastoral-dropdown-content");
+       if (content) {
+           dropdown.addEventListener("mouseenter", () => {
+               content.classList.add("pastoral-show");
+           });
 
-    // Hover ile açma
-    dropdown.addEventListener("mouseenter", () => {
-      content.classList.add("pastoral-show");
-    });
+           dropdown.addEventListener("mouseleave", () => {
+               content.classList.remove("pastoral-show");
+           });
+       }
+   });
 
-    // Hover dışına çıkıldığında kapama
-    dropdown.addEventListener("mouseleave", () => {
-      content.classList.remove("pastoral-show");
-    });
-  });
+   // Mobil menü işlevselliği
+   const menuToggle = document.getElementById("menu-toggle");
+   const mainNav = document.getElementById("main-nav");
+   const bars = document.querySelectorAll(".bar");
 
-  // Mobil menü açma/kapatma işlevselliği ve animasyonlar
-  const menuToggle = document.getElementById("menu-toggle");
-  const mainNav = document.getElementById("main-nav");
-  const bars = document.querySelectorAll(".bar");
+   if (menuToggle && mainNav) {
+       menuToggle.addEventListener("click", () => {
+           mainNav.classList.toggle("pastoral-mobile-visible");
+           menuToggle.classList.toggle("open");
 
-  menuToggle.addEventListener("click", () => {
-    mainNav.classList.toggle("pastoral-mobile-visible");
-    menuToggle.classList.toggle("open");
-
-    // Hamburger menünün çubuklarının animasyonu
-    bars.forEach((bar, index) => {
-      if (index === 0) {
-        bar.classList.toggle("rotate-down");
-      } else if (index === 1) {
-        bar.classList.toggle("hide");
-      } else if (index === 2) {
-        bar.classList.toggle("rotate-up");
-      }
-    });
-  });
+           bars.forEach((bar, index) => {
+               if (index === 0) {
+                   bar.classList.toggle("rotate-down");
+               } else if (index === 1) {
+                   bar.classList.toggle("hide");
+               } else if (index === 2) {
+                   bar.classList.toggle("rotate-up");
+               }
+           });
+       });
+   } else {
+       console.warn("Menu toggle veya main navigation elementleri bulunamadı.");
+   }
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOMContentLoaded olayı tetiklendi");
+    loadHeader(); // Header önce yüklenmeli
+    loadCarousel(); // Carousel yüklemesi
+});
+
+

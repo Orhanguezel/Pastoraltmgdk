@@ -1,10 +1,13 @@
-// content.js
-
 export function loadContent() {
-    const contentArea = document.createElement("div");
-    contentArea.classList.add("content-section");
+    console.log("loadContent fonksiyonu çağrıldı.");
+    const contentContainer = document.getElementById("content");
+    if (!contentContainer) {
+        console.warn("Content elementi bulunamadı. Bu sayfa içerik yüklemiyor olabilir.");
+        return;
+    }
 
-    contentArea.innerHTML = `
+    console.log("Content elementi bulundu, içeriği yükleme işlemi başlıyor.");
+    contentContainer.innerHTML =`
         <div class="content-container">
             <div class="content-item">
                 <i class="bi bi-shield-check content-icon"></i>
@@ -27,5 +30,6 @@ export function loadContent() {
         </div>
     `;
 
-    document.getElementById("content").appendChild(contentArea);
+    console.log("İçerik başarıyla yüklendi.");
 }
+
