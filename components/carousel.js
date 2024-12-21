@@ -9,34 +9,34 @@ export function loadCarousel() {
         <div class='carousel-container'>
             <!-- Informasyon bölümü -->
             <div class='carousel-inf' id='carousel-inf'>
-                <h2>Tehlikeli Madde Güvenliği Çözümleri</h2>
-                <p>Pastoral TMGDK olarak, güvenliğiniz için en yüksek standartlarda danışmanlık hizmeti sunuyoruz.</p>
+                <h2>Doğu ve Güneydoğu'nun Parlayan Yıldızı</h2>
+                <p>Pastoral TMGDK, bölgenin lider tehlikeli madde danışmanlık firmasıdır.</p>
                 <a href="teklif.html" class="carousel-button">Teklif İste</a>
             </div>
             
             <!-- Carousel bölümü -->
             <div class='owl-carousel' id='owlCarousel'>
-                <div class='slide' data-title="Doğu ve Güneydoğu'nun Parlayan Yıldızı" data-text="Pastoral TMGDK olarak, Doğu ve Güneydoğu Anadolu bölgelerinde tehlikeli madde yönetimi ve danışmanlık alanında lider konumdayız. Kaliteli hizmet anlayışımızla sektöre yön veriyoruz.">
+                <div class='slide' data-title="Doğu ve Güneydoğu'nun Parlayan Yıldızı" data-text="Pastoral TMGDK, Doğu ve Güneydoğu Anadolu'da tehlikeli madde yönetimi konusunda güvenilir liderdir.">
                     <img class='owl-item-bg' src='assets/img/slayt/1.png' alt='Slayt 1'>
                 </div>
 
-                <div class='slide' data-title="Akaryakıt ve Hastanelerde Lider Danışmanlık Hizmetleri" data-text="Pastoral TMGDK olarak, tehlikeli madde ve kimyasal yönetiminde uzmanız. Özellikle akaryakıt sektörü ve hastanelerde, TMGD hizmetleri, MSDS hazırlığı, KKDİK işlemleri ve lojistik desteği ile lider konumdayız.">
+                <div class='slide' data-title="Akaryakıt ve Hastanelerde Güvenilir Hizmet" data-text="Akaryakıt sektörü ve hastaneler için lojistik ve güvenlik çözümleri.">
                     <img class='owl-item-bg' src='assets/img/slayt/2.png' alt='Slayt 2'>
                 </div>
 
-                <div class='slide' data-title="Tehlikeli Madde Güvenlik Danışmanlığı İçin Güvenilir Adres!" data-text="Mühendislik ilkeleri ile hizmet veren TMGD TR Mühendisliği seçin, güvenle yolunuza devam edin.">
+                <div class='slide' data-title="Güvenilir Danışmanlık" data-text="Tehlikeli madde yönetimi için profesyonel destek sunuyoruz.">
                     <img class='owl-item-bg' src='assets/img/slayt/3.png' alt='Slayt 3'>
                 </div>
 
-                <div class='slide' data-title="Tehlikeli Madde Danışmanlık Hizmetlerimiz" data-text="Pastoral TMGDK, hizmet verdiği tüm işletmelere değer katmaktadır. İhtiyacınıza uygun çözümler sunuyoruz.">
+                <div class='slide' data-title="Değer Katan Çözümler" data-text="İhtiyacınıza uygun danışmanlık hizmetleri ile yanınızdayız.">
                     <img class='owl-item-bg' src='assets/img/slayt/4.png' alt='Slayt 4'>
                 </div>
 
-                <div class='slide' data-title="Tecrübeli ve Profesyonel" data-text="İşletmenize sizin kadar değer katabilecek ve bilgisiyle katkı sağlayacak uzman TMGD'lerimiz yanınızda.">
+                <div class='slide' data-title="Tecrübeli ve Güvenilir" data-text="Deneyimli ekibimizle işletmenize değer katıyoruz.">
                     <img class='owl-item-bg' src='assets/img/slayt/5.png' alt='Slayt 5'>
                 </div>
 
-                <div class='slide' data-title="Güven ve Tecrübe" data-text="Pastoral TMGDK tecrübeli kadrosu ile güven vermeye devam ediyor. Tehlikeli madde güvenlik danışmanlığı için bizimle iletişime geçin.">
+                <div class='slide' data-title="Lider Kadro" data-text="Tehlikeli madde güvenliğinde sektörün lider kadrosu.">
                     <img class='owl-item-bg' src='assets/img/slayt/6.png' alt='Slayt 6'>
                 </div>
             </div>
@@ -66,6 +66,9 @@ export function loadCarousel() {
         }
     });
 
+    // İlk slayt bilgilerini göster
+    updateCarouselInfo(0);
+
     document.querySelectorAll('.radio-buttons input').forEach((radio, index) => {
         radio.addEventListener('click', () => {
             owlCarousel.trigger('to.owl.carousel', [index, 300]);
@@ -79,16 +82,14 @@ export function loadCarousel() {
 
         document.querySelector(`#radio${currentIndex + 1}`).checked = true;
 
-        const currentItem = $('#owlCarousel .slide').eq(currentIndex).data();
-        if (currentItem) {
-            const infoContainer = document.querySelector('#carousel-inf');
-            infoContainer.classList.add('fade-out');
-
-            setTimeout(() => {
-                document.querySelector('#carousel-inf h2').textContent = currentItem.title;
-                document.querySelector('#carousel-inf p').textContent = currentItem.text;
-                infoContainer.classList.remove('fade-out');
-            }, 500);
-        }
+        updateCarouselInfo(currentIndex);
     });
+
+    function updateCarouselInfo(index) {
+        const currentItem = $('#owlCarousel .slide').eq(index).data();
+        if (currentItem) {
+            document.querySelector('#carousel-inf h2').textContent = currentItem.title;
+            document.querySelector('#carousel-inf p').textContent = currentItem.text;
+        }
+    }
 }
