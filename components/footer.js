@@ -23,10 +23,11 @@ export function loadFooter() {
                   </ul>
               </div>
               <div class="footer-contact">
-                  <h4>İletişim</h4>
-                  <p>Adres: [Adres Bilgisi]</p>
-                  <p>Telefon: [Telefon Numarası]</p>
-                  <p>E-posta: [E-posta Adresi]</p>
+                <h4>İletişim</h4>
+                <p>Adres: Urfa Bulvarı Sun Yapı 2 Halit Evran Konutları</p>
+                <p>D/7 Bağcılar Mahallesi Bağlar/Diyarbakır</p>
+                <p>Telefon: 0506 282 11 11</p>
+                <p>E-posta: pastoral@pastoraltmgdk.com</p>
               </div>
               <div class="footer-social">
                     <h4>Bizi Takip Edin</h4>
@@ -37,11 +38,11 @@ export function loadFooter() {
           </div>
           <div class="footer-bottom">
               <p>&copy; 2024 Pastoral TMGDK. Tüm hakları saklıdır.</p>
-          </div>
           <!-- Designed by Link -->
           <a href="https://www.guezelwebdesign.com" target="_blank" rel="noopener noreferrer" class="designed-by-link">
             Designed by OG
           </a>
+          </div>
         </footer>
     `;
 }

@@ -16,21 +16,26 @@ export function loadCarousel() {
             
             <!-- Carousel bölümü -->
             <div class='owl-carousel' id='owlCarousel'>
-                <div class='slide' data-title="Tehlikeli Madde ve Kimyasallar İçin Tüm Konularda Danışın!" data-text="TMGD hizmetinin yanı sıra MSDS Hazırlanması, KKDİK İşlemleri, Hava-Kara ve Deniz Lojistiği, Çevre Danışmanlık Hizmetleri gibi konularda destek alin.">
+                <div class='slide' data-title="Doğu ve Güneydoğu'nun Parlayan Yıldızı" data-text="Pastoral TMGDK olarak, Doğu ve Güneydoğu Anadolu bölgelerinde tehlikeli madde yönetimi ve danışmanlık alanında lider konumdayız. Kaliteli hizmet anlayışımızla sektöre yön veriyoruz.">
                     <img class='owl-item-bg' src='assets/img/slayt/1.png' alt='Slayt 1'>
                 </div>
-                <div class='slide' data-title="Tehlikeli Madde Güvenlik Danışmanlığı İçin Güvenilir Adres!" data-text="Mühendislik ilkeleri ile hizmet veren TMGD TR Mühendisliği seçin, güvenle yolunuza devam edin.">
+
+                <div class='slide' data-title="Akaryakıt ve Hastanelerde Lider Danışmanlık Hizmetleri" data-text="Pastoral TMGDK olarak, tehlikeli madde ve kimyasal yönetiminde uzmanız. Özellikle akaryakıt sektörü ve hastanelerde, TMGD hizmetleri, MSDS hazırlığı, KKDİK işlemleri ve lojistik desteği ile lider konumdayız.">
                     <img class='owl-item-bg' src='assets/img/slayt/2.png' alt='Slayt 2'>
                 </div>
-                <div class='slide' data-title="Tehlikeli Madde Danışmanlık Hizmetlerimiz" data-text="Pastoral TMGDK, hizmet verdiği tüm işletmelere değer katmaktadır. İhtiyacınıza uygun çözümler sunuyoruz.">
+
+                <div class='slide' data-title="Tehlikeli Madde Güvenlik Danışmanlığı İçin Güvenilir Adres!" data-text="Mühendislik ilkeleri ile hizmet veren TMGD TR Mühendisliği seçin, güvenle yolunuza devam edin.">
                     <img class='owl-item-bg' src='assets/img/slayt/3.png' alt='Slayt 3'>
                 </div>
-                <div class='slide' data-title="Tecrübeli ve Profesyonel" data-text="İşletmenize sizin kadar değer katabilecek ve bilgisiyle katkı sağlayacak uzman TMGD'lerimiz yanınızda.">
+
+                <div class='slide' data-title="Tehlikeli Madde Danışmanlık Hizmetlerimiz" data-text="Pastoral TMGDK, hizmet verdiği tüm işletmelere değer katmaktadır. İhtiyacınıza uygun çözümler sunuyoruz.">
                     <img class='owl-item-bg' src='assets/img/slayt/4.png' alt='Slayt 4'>
                 </div>
-                <div class='slide' data-title="Türkiye Genelinde Hizmet" data-text="Pastoral TMGDK olarak, Türkiye genelinde her yerde hizmet sunuyoruz.">
+
+                <div class='slide' data-title="Tecrübeli ve Profesyonel" data-text="İşletmenize sizin kadar değer katabilecek ve bilgisiyle katkı sağlayacak uzman TMGD'lerimiz yanınızda.">
                     <img class='owl-item-bg' src='assets/img/slayt/5.png' alt='Slayt 5'>
                 </div>
+
                 <div class='slide' data-title="Güven ve Tecrübe" data-text="Pastoral TMGDK tecrübeli kadrosu ile güven vermeye devam ediyor. Tehlikeli madde güvenlik danışmanlığı için bizimle iletişime geçin.">
                     <img class='owl-item-bg' src='assets/img/slayt/6.png' alt='Slayt 6'>
                 </div>
