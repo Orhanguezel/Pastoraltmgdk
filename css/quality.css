@@ -1,19 +1,22 @@
-/* quality.css */
-
+/* Genel Quality Section Ayarları */
 .quality-section {
     padding: 20px;
     margin-top: 150px;
     margin: 20px auto;
     max-width: 1100px; 
     background-color: var(--background2-color);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Başlık Alanı */
 .quality-title {
     padding: 20px;
-    box-shadow: 0 4px 8px rgba(52, 51, 51, 0.1);
     margin-bottom: 20px;
+    background-color: var(--background-color);
+    box-shadow: 0 4px 8px rgba(52, 51, 51, 0.1);
+    text-align: center;
 }
 
 .quality-title h2 {
@@ -22,22 +25,30 @@
     margin: 0;
 }
 
-.quality-title i {
-    color: var(--green2-color);
-}
-
 .quality-title p {
     color: var(--text-color);
     font-size: 1.2em;
     margin-top: 10px;
 }
 
+.quality-title i {
+    color: var(--green2-color);
+    font-size: 2rem;
+    vertical-align: middle;
+}
+
+/* Kalite İlkeleri Alanı */
 .quality-principles {
-    text-align: left;
-    margin-top: 20px;
-    background-color:var(--background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    background-color: var(--background-color);
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+    border-radius: 5px;
 }
 
 .quality-principles:hover {
@@ -60,19 +71,18 @@
 
 .quality-principles ul li {
     font-size: 1.1em;
-    color:var(--text-color);
+    color: var(--text-color);
     margin: 10px 0;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.quality-icon {
+/* İkonlar */
+.quality-icon, .quality-check-icon {
     color: var(--highlight-color);
-}
-
-.quality-check-icon {
-    color: var(--highlight-color);
+    font-size: 1.5em;
+    vertical-align: middle;
 }
 
 /* Responsive Ayarlar */
@@ -85,11 +95,37 @@
         font-size: 2em;
     }
 
+    .quality-title p {
+        font-size: 1em;
+    }
+
     .quality-principles h3 {
         font-size: 1.5em;
     }
 
     .quality-principles ul li {
         font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .quality-title h2 {
+        font-size: 1.8em;
+    }
+
+    .quality-title p {
+        font-size: 0.95em;
+    }
+
+    .quality-principles {
+        padding: 15px;
+    }
+
+    .quality-principles h3 {
+        font-size: 1.3em;
+    }
+
+    .quality-principles ul li {
+        font-size: 0.9em;
     }
 }
