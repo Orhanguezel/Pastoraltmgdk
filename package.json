@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "nodemailer": "^6.9.16",
     "owl.carousel": "^2.3.4"
   },
   "name": "pastoral-tmgd",

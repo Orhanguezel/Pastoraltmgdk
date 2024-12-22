@@ -1,24 +1,24 @@
 <?php
-// Formdan gelen verileri al
-$name = $_POST['name'];
-$phone = $_POST['phone'];
-$email = $_POST['email'];
-$company = $_POST['company'];
-$sector = $_POST['sector'];
-$activity_area = isset($_POST['activityArea']) ? implode(", ", $_POST['activityArea']) : "Seçilmedi"; // Checkbox için çoklu seçim
-$capacity = $_POST['capacity'];
-$certificate = $_POST['certificate'];
-$international_connection = $_POST['internationalConnection'];
-$product_info = $_POST['productInfo'];
-$product_class = $_POST['productClass'];
-$un_class = $_POST['unClass'];
-$msds = $_POST['msds'];
-$transport_method = $_POST['transportMethod'];
+// Formdan gelen verileri al ve güvenlik için temizle
+$name = htmlspecialchars($_POST['name']);
+$phone = htmlspecialchars($_POST['phone']);
+$email = htmlspecialchars($_POST['email']);
+$company = htmlspecialchars($_POST['company']);
+$sector = htmlspecialchars($_POST['sector']);
+$activity_area = isset($_POST['activityArea']) ? implode(", ", array_map('htmlspecialchars', $_POST['activityArea'])) : "Seçilmedi";
+$capacity = htmlspecialchars($_POST['capacity']);
+$certificate = htmlspecialchars($_POST['certificate']);
+$international_connection = htmlspecialchars($_POST['internationalConnection']);
+$product_info = htmlspecialchars($_POST['productInfo']);
+$product_class = htmlspecialchars($_POST['productClass']);
+$un_class = htmlspecialchars($_POST['unClass']);
+$msds = htmlspecialchars($_POST['msds']);
+$transport_method = htmlspecialchars($_POST['transportMethod']);
 
 // E-posta ayarları
-$to = "orhanguzell@gmail.com"; // E-posta gönderilecek adres
+$to = "pastoral@pastoraltmgdk.com"; // Tekliflerin gönderileceği e-posta adresi
 $subject = "Yeni Teklif Talebi"; // E-posta başlığı
-$headers = "From: noreply@website.com\r\n";
+$headers = "From: noreply@pastoraltmgdk.com\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
 // E-posta içeriği
@@ -40,10 +40,10 @@ $email_content = "
     <p><strong>Ürün Taşıma Şekli:</strong> {$transport_method}</p>
 ";
 
-// E-posta gönderme fonksiyonu
+// E-posta gönderme işlemi
 if (mail($to, $subject, $email_content, $headers)) {
-    echo "success"; // E-posta başarıyla gönderildiğinde "success" döndür
+    echo "Teklif talebiniz başarıyla alındı. Sizinle en kısa sürede iletişime geçeceğiz.";
 } else {
-    echo "error"; // Bir hata olursa "error" döndür
+    echo "Teklif talebiniz gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.";
 }
 ?>

@@ -1,18 +1,18 @@
 <?php
-// Formdan gelen verileri al
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$city = $_POST['city'];
-$education = $_POST['education'];
-$experience = $_POST['experience'];
-$driving = $_POST['driving'];
-$tmgd = $_POST['tmgd'];
+// Formdan gelen verileri al ve güvenlik için temizle
+$name = htmlspecialchars($_POST['name']);
+$email = htmlspecialchars($_POST['email']);
+$phone = htmlspecialchars($_POST['phone']);
+$city = htmlspecialchars($_POST['city']);
+$education = htmlspecialchars($_POST['education']);
+$experience = htmlspecialchars($_POST['experience']);
+$driving = htmlspecialchars($_POST['driving']);
+$tmgd = htmlspecialchars($_POST['tmgd']);
 
 // E-posta ayarları
-$to = "orhanguzell@gmail.com"; // E-posta gönderilecek adres
+$to = "pastoral@pastoraltmgdk.com"; // Başvuruların gönderileceği e-posta adresi
 $subject = "Yeni İş Başvurusu"; // E-posta başlığı
-$headers = "From: noreply@website.com\r\n";
+$headers = "From: noreply@pastoraltmgdk.com\r\n";
 $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
 // E-posta içeriği
@@ -24,14 +24,14 @@ $email_content = "
     <p><strong>İl:</strong> {$city}</p>
     <p><strong>Mezuniyet:</strong> {$education}</p>
     <p><strong>Toplam İş Tecrübesi:</strong> {$experience}</p>
-    <p><strong>Araç Kullanımı:</strong> {$driving}</p>
+    <p><strong>Aktif Araç Kullanımı:</strong> {$driving}</p>
     <p><strong>TMGD Belgesi:</strong> {$tmgd}</p>
 ";
 
-// E-posta gönderme fonksiyonu
+// E-posta gönderme işlemi
 if (mail($to, $subject, $email_content, $headers)) {
-    echo "success"; // E-posta başarıyla gönderildiğinde "success" döndür
+    echo "Başvurunuz başarıyla alındı. En kısa sürede sizinle iletişime geçeceğiz.";
 } else {
-    echo "error"; // Bir hata olursa "error" döndür
+    echo "Başvurunuz gönderilirken bir hata oluştu. Lütfen daha sonra tekrar deneyiniz.";
 }
 ?>

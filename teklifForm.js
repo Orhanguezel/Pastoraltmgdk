@@ -1,18 +1,17 @@
 document.addEventListener("DOMContentLoaded", () => {
     const contentArea = document.getElementById("teklifFormu");
 
+    // Form içeriğini oluştur
     contentArea.innerHTML = `
         <div class="application-container">
-            <!-- Bilgilendirme Bölümü -->
             <section class="application-info">
                 <h1>Teklif İste</h1>
                 <p>Tehlikeli Madde Güvenlik Danışmanlık Kuruluşumuzdan (TMGDK) hizmet almak için aşağıdaki formu doldurup teklif talebinde bulunabilirsiniz. Sizinle en kısa sürede iletişime geçeceğiz.</p>
             </section>
 
-            <!-- Teklif Formu -->
             <section class="application-form">
                 <h2>Teklif Talep Formu</h2>
-                <form action="submit-teklif.php" method="POST">
+                <form id="emailForm">
                     <div class="form-group">
                         <label for="name">Ad Soyad</label>
                         <input type="text" id="name" name="name" required>
@@ -33,8 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         <label for="sector">Faaliyet Sektörü</label>
                         <input type="text" id="sector" name="sector" required>
                     </div>
-                    
-                    <!-- Faaliyet Alanı Checkbox Listesi -->
                     <div class="form-group">
                         <label>Faaliyet Alanı</label>
                         <div class="checkbox-group">
@@ -47,13 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
                             <label><input type="checkbox" name="activityArea[]" value="Boşaltıcı"> Boşaltıcı</label>
                         </div>
                     </div>
-
                     <div class="form-group">
                         <label for="capacity">Yıllık Faaliyet Kapasitesi (Kg/Lt)</label>
                         <input type="number" id="capacity" name="capacity" required>
                     </div>
-
-                    <!-- Faaliyet Belgesi Radio Button -->
                     <div class="form-group">
                         <label>Faaliyet Belgesi</label>
                         <div>
@@ -61,8 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
                             <label><input type="radio" name="certificate" value="Yok"> Yok</label>
                         </div>
                     </div>
-
-                    <!-- Yurtdışı Bağlantısı Radio Button -->
                     <div class="form-group">
                         <label>Yurtdışı Bağlantısı</label>
                         <div>
@@ -70,13 +62,10 @@ document.addEventListener("DOMContentLoaded", () => {
                             <label><input type="radio" name="internationalConnection" value="Yok"> Yok</label>
                         </div>
                     </div>
-
                     <div class="form-group">
                         <label for="productInfo">Ürün Bilgisi</label>
                         <textarea id="productInfo" name="productInfo" rows="4" required></textarea>
                     </div>
-
-                    <!-- Ürünlerin Sınıfı Radio Button -->
                     <div class="form-group">
                         <label>Ürünlerin Sınıfı</label>
                         <div>
@@ -84,8 +73,6 @@ document.addEventListener("DOMContentLoaded", () => {
                             <label><input type="radio" name="productClass" value="Bilinmiyor"> Bilinmiyor</label>
                         </div>
                     </div>
-
-                    <!-- Ürünlerin UN Sınıfı Radio Button -->
                     <div class="form-group">
                         <label>Ürünlerin UN Sınıfı</label>
                         <div>
@@ -93,8 +80,6 @@ document.addEventListener("DOMContentLoaded", () => {
                             <label><input type="radio" name="unClass" value="Yok"> Yok</label>
                         </div>
                     </div>
-
-                    <!-- Ürünlerin MSDS'i Radio Button -->
                     <div class="form-group">
                         <label>Ürünlerin MSDS'i</label>
                         <div>
@@ -102,12 +87,10 @@ document.addEventListener("DOMContentLoaded", () => {
                             <label><input type="radio" name="msds" value="Yok"> Yok</label>
                         </div>
                     </div>
-
                     <div class="form-group">
                         <label for="transportMethod">Ürün Taşıma Şekli</label>
                         <input type="text" id="transportMethod" name="transportMethod" required>
                     </div>
-
                     <div class="form-group">
                         <button type="submit" class="submit-button">Teklif Talebini Gönder</button>
                     </div>
@@ -115,4 +98,58 @@ document.addEventListener("DOMContentLoaded", () => {
             </section>
         </div>
     `;
+
+    // Form gönderme işlevi
+    document.getElementById("emailForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const formData = {
+            name: document.getElementById("name").value,
+            phone: document.getElementById("phone").value,
+            email: document.getElementById("email").value,
+            company: document.getElementById("company").value,
+            sector: document.getElementById("sector").value,
+            activityArea: Array.from(document.querySelectorAll('input[name="activityArea[]"]:checked')).map(el => el.value),
+            capacity: document.getElementById("capacity").value,
+            certificate: document.querySelector('input[name="certificate"]:checked').value,
+            internationalConnection: document.querySelector('input[name="internationalConnection"]:checked').value,
+            productInfo: document.getElementById("productInfo").value,
+            productClass: document.querySelector('input[name="productClass"]:checked').value,
+            unClass: document.querySelector('input[name="unClass"]:checked').value,
+            msds: document.querySelector('input[name="msds"]:checked').value,
+            transportMethod: document.getElementById("transportMethod").value
+        };
+
+        // SMTP.js kullanarak e-posta gönder
+        Email.send({
+            Host: "smtp.hostinger.com",
+            Username: "pastoral@pastoraltmgdk.com", // E-posta adresiniz
+            Password: "Pastoral1234#",            // E-posta şifreniz
+            To: "pastoral@pastoraltmgdk.com",      // E-posta alıcısı
+            From: formData.email,                  // Gönderen e-posta
+            Subject: `Yeni Teklif Talebi - ${formData.name}`,
+            Body: `
+                <h2>Yeni Teklif Talebi</h2>
+                <p><strong>Ad Soyad:</strong> ${formData.name}</p>
+                <p><strong>Telefon:</strong> ${formData.phone}</p>
+                <p><strong>E-posta:</strong> ${formData.email}</p>
+                <p><strong>Firma Adı:</strong> ${formData.company}</p>
+                <p><strong>Faaliyet Sektörü:</strong> ${formData.sector}</p>
+                <p><strong>Faaliyet Alanı:</strong> ${formData.activityArea.join(", ")}</p>
+                <p><strong>Yıllık Faaliyet Kapasitesi:</strong> ${formData.capacity} Kg/Lt</p>
+                <p><strong>Faaliyet Belgesi:</strong> ${formData.certificate}</p>
+                <p><strong>Yurtdışı Bağlantısı:</strong> ${formData.internationalConnection}</p>
+                <p><strong>Ürün Bilgisi:</strong> ${formData.productInfo}</p>
+                <p><strong>Ürünlerin Sınıfı:</strong> ${formData.productClass}</p>
+                <p><strong>Ürünlerin UN Sınıfı:</strong> ${formData.unClass}</p>
+                <p><strong>Ürünlerin MSDS'i:</strong> ${formData.msds}</p>
+                <p><strong>Ürün Taşıma Şekli:</strong> ${formData.transportMethod}</p>
+            `
+        }).then(() => {
+            alert("E-posta başarıyla gönderildi!");
+        }).catch((error) => {
+            console.error("E-posta gönderimi hatası:", error);
+            alert("E-posta gönderimi başarısız oldu!");
+        });
+    });
 });
