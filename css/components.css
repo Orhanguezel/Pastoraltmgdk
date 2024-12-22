@@ -46,7 +46,38 @@
     display: none;
 }
 
-.page-header-image img {
+.page-header-image {
+    position: relative;
+    top:120px;
     width: 100%;
-    height: auto;
+    height: auto; /* Yükseklik otomatik */
+    max-height: 450px; /* Maksimum yükseklik */
+    overflow: hidden; /* Taşan kısımları gizle */
+    background-color: var(--background-color);
+    display: flex; /* Flexbox ile içerik merkezleme */
+    justify-content: center; /* Yatay merkezleme */
+    align-items: center; /* Dikey merkezleme */
 }
+
+.page-header-image img {
+    max-width: 100%; /* Resmin genişliği maksimum olarak %100'e sığacak */
+    max-height: 100%; /* Yükseklik maksimum olarak %100'e sığacak */
+    object-fit: scale-down; /* Oran koruyarak görüntüyü küçült */
+    object-position: center; /* Resmi ortala */
+}
+
+/* Mobil için daha iyi optimizasyon */
+@media (max-width: 768px) {
+    .page-header-image {
+        max-height: 300px; /* Tabletler için yüksekliği ayarla */
+    }
+}
+
+@media (max-width: 480px) {
+    .page-header-image {
+        max-height: 200px; /* Mobil cihazlar için yüksekliği ayarla */
+    }
+}
+
+
+

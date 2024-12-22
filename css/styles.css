@@ -5,6 +5,7 @@
   padding:20px; /* Üst ve alt boşluk */
   margin: 0 auto; /* Ortala */
   max-width: 1100px; /* Maksimum genişlik */
+  margin-top: 100px;
   gap: 20px; /* Daha fazla boşluk için */
 }
 
@@ -316,6 +317,7 @@ table caption {
   .container {
     padding: 10px; /* Üst ve alt boşluk */
     flex-direction: column;
+    margin-top: 120px;
   }
 
   .sidebar {
