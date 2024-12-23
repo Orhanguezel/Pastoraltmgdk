@@ -73,7 +73,7 @@ export const servicesData = [
                 <p>TMFB başvurusunda bulunmak isteyen firmaların, <strong>Ek-3 Faaliyet Tespit Raporu</strong> ve gerekli diğer belgeleri hazırlaması gerekmektedir. Pastoral TMGDK uzmanları, işletmenizin faaliyet yapısına uygun bir başvuru dosyası hazırlamanız için destek sunmaktadır.</p>
 
                 <h3>Hizmet Detayları ve Başvuru</h3>
-                <p>Pastoral TMGDK olarak, TMFB başvuru ve yenileme süreçlerinde işletmelere destek sunmaktayız. Başvuru detayları ve diğer hizmetler hakkında daha fazla bilgi almak için <a href="mailto:info@Pastoraltmgd.com">info@Pastoraltmgd.com</a> adresinden bizimle iletişime geçebilirsiniz.</p>
+                <p>Pastoral TMGDK olarak, TMFB başvuru ve yenileme süreçlerinde işletmelere destek sunmaktayız. Başvuru detayları ve diğer hizmetler hakkında daha fazla bilgi almak için <a href="mailto:pastoral@pastoraltmgdk.com">pastoral@pastoraltmgdk.com</a> adresinden bizimle iletişime geçebilirsiniz.</p>
                 
                 <p>Hemen Başvuru Yap butonuna tıklayarak başvurunuzu hızlı bir şekilde tamamlayabilir ve uzman ekibimizin sizi bilgilendirmesini sağlayabilirsiniz.</p>
             </section>
@@ -132,7 +132,7 @@ export const servicesData = [
                 <h3>KKDİK Kapsamında İhtiyacınız Olan Desteği Sağlıyoruz</h3>
                 <p>Pastoral TMGDK olarak, KKDİK kapsamındaki her türlü yasal yükümlülüğünüzü yerine getirmenize yardımcı oluyoruz. Stratejik planlama ile en uygun süreç yönetimi, güvenlik bilgi formları hazırlama ve kayıt güncellemeleri konularında profesyonel destek sunmaktayız.</p>
                 
-                <p>Daha fazla bilgi için <a href="mailto:info@Pastoraltmgd.com">info@Pastoraltmgd.com</a> adresine e-posta gönderebilir veya iletişim numaralarımızdan bize ulaşabilirsiniz.</p>
+                <p>Daha fazla bilgi için <a href="mailto:pastoral@pastoraltmgdk.com">pastoral@pastoraltmgdk.com</a> adresine e-posta gönderebilir veya iletişim numaralarımızdan bize ulaşabilirsiniz.</p>
             </section>
         `
     },
@@ -161,7 +161,7 @@ export const servicesData = [
                 <h3>Pastoral TMGDK Olarak ADR Muafiyet Raporu Sürecinde Yanınızdayız</h3>
                 <p><strong>Pastoral TMGDK</strong>, ADR Muafiyet Raporu sürecinde işletmelere kapsamlı destek sunar. İşletmeniz, yönetmelik gerekliliklerini sağlıyorsa, muafiyet durumunuzu belgeleyen resmi raporunuzu almanız için size rehberlik ediyoruz. Başvurularınızın eksiksiz ve doğru şekilde yapılması için uzman ekibimizden destek alabilirsiniz.</p>
 
-                <p>Detaylı bilgi ve danışmanlık için <a href="mailto:info@Pastoraltmgd.com">info@Pastoraltmgd.com</a> adresine e-posta gönderebilir veya iletişim numaralarımızdan bize ulaşabilirsiniz.</p>
+                <p>Detaylı bilgi ve danışmanlık için <a href="mailto:pastoral@pastoraltmgdk.com">pastoral@pastoraltmgdk.com</a> adresine e-posta gönderebilir veya iletişim numaralarımızdan bize ulaşabilirsiniz.</p>
             </section>
         `
     },
@@ -200,7 +200,7 @@ export const servicesData = [
                 <p>TMGD eğitimleri, tehlikeli maddelerle çalışan personelin güvenlik konusunda farkındalık kazanmasını sağlar. Eğitim sonunda verilen <strong>Katılım Belgesi</strong> ile personel aldıkları eğitimleri belgeleyebilir. Bu eğitimler, çalışanların hem bireysel güvenliklerini hem de şirket içi güvenlik standartlarını artırmalarına yardımcı olur.</p>
 
                 <h3>Pastoral TMGDK ile Profesyonel TMGD Eğitimleri</h3>
-                <p>Pastoral TMGDK olarak, sektörde ihtiyaç duyulan tüm TMGD eğitimlerini sunmaktayız. Tehlikeli madde güvenlik danışmanlığı konusunda detaylı bilgi almak ve eğitimlerimize katılmak için <a href="mailto:info@Pastoraltmgd.com">info@Pastoraltmgd.com</a> adresinden bizimle iletişime geçebilirsiniz.</p>
+                <p>Pastoral TMGDK olarak, sektörde ihtiyaç duyulan tüm TMGD eğitimlerini sunmaktayız. Tehlikeli madde güvenlik danışmanlığı konusunda detaylı bilgi almak ve eğitimlerimize katılmak için <a href="mailto:pastoral@pastoraltmgdk.com">pastoral@pastoraltmgdk.com</a> adresinden bizimle iletişime geçebilirsiniz.</p>
             </section>
         `
     },
@@ -231,7 +231,7 @@ export const servicesData = [
                 <p>Tehlikeli maddelerin taşınmasında, araçlar <strong>ADR Sözleşmesi</strong> kapsamında belirlenen standartlara göre işaretlenmelidir. Uluslararası kabul gören bu etiketler, tehlikeli maddenin sınıfını gösterir ve en az 10 cm x 10 cm ölçülerinde olmalıdır. Her bir tehlikeli madde sınıfı için ayrı bir işaretleme yöntemi bulunur ve bu işaretler <em>ADR Bölüm 5.2</em>'de detaylandırılmıştır.</p>
 
                 <h3>Tehlikeli Madde Taşımacılığında Ambalaj ve Etiketleme Hizmetleri</h3>
-                <p>Pastoral TMGD olarak, ADR onaylı ambalaj kullanması gereken veya UN Tip Onayı almak isteyen işletmelere profesyonel destek sağlıyoruz. Hizmetlerimiz hakkında daha detaylı bilgi almak ve tehlikeli madde taşımacılığı süreçlerinizde güvenliği artırmak için <a href="mailto:info@Pastoraltmgd.com">info@Pastoraltmgd.com</a> adresinden bizimle iletişime geçebilirsiniz.</p>
+                <p>Pastoral TMGD olarak, ADR onaylı ambalaj kullanması gereken veya UN Tip Onayı almak isteyen işletmelere profesyonel destek sağlıyoruz. Hizmetlerimiz hakkında daha detaylı bilgi almak ve tehlikeli madde taşımacılığı süreçlerinizde güvenliği artırmak için <a href="mailto:pastoral@pastoraltmgdk.com">pastoral@pastoraltmgdk.com</a> adresinden bizimle iletişime geçebilirsiniz.</p>
             </section>
         `
     },
@@ -263,7 +263,7 @@ export const servicesData = [
 
             <section>
                 <h2>KKDİK Kapsamında Temel Bilgilendirme</h2>
-                <p><strong>KKDİK yönetmeliği</strong> ile Türkiye'de kimyasal güvenliği sağlanmakta ve ithalat-ihracat süreçlerine uygunluk kazandırılmaktadır. Firmalar, <strong>tonaj miktarına göre</strong> gerekli belgeleri temin ederek yasal yükümlülüklerini yerine getirmelidir. KKDİK süreci ile ilgili detaylı bilgilendirme ve danışmanlık için <a href="mailto:info@Pastoraltmgd.com">info@Pastoraltmgd.com</a> adresinden iletişime geçebilirsiniz.</p>
+                <p><strong>KKDİK yönetmeliği</strong> ile Türkiye'de kimyasal güvenliği sağlanmakta ve ithalat-ihracat süreçlerine uygunluk kazandırılmaktadır. Firmalar, <strong>tonaj miktarına göre</strong> gerekli belgeleri temin ederek yasal yükümlülüklerini yerine getirmelidir. KKDİK süreci ile ilgili detaylı bilgilendirme ve danışmanlık için <a href="mailto:pastoral@pastoraltmgdk.com">pastoral@pastoraltmgdk.com</a> adresinden iletişime geçebilirsiniz.</p>
             </section>
         `
     },
@@ -296,7 +296,7 @@ export const servicesData = [
                 
                 <img src="assets/img/default-sample-shipping-info.png" alt="TR Freight Kimyasal Numune Gönderim Süreci" class="content-image">
 
-                <p>Detaylı bilgi almak veya hizmet talep etmek için <a href="mailto:info@Pastoraltmgd.com">info@Pastoraltmgd.com</a> adresinden bizimle iletişime geçebilirsiniz.</p>
+                <p>Detaylı bilgi almak veya hizmet talep etmek için <a href="mailto:pastoral@pastoraltmgdk.com">pastoral@pastoraltmgdk.com</a> adresinden bizimle iletişime geçebilirsiniz.</p>
             </section>
         `
     },{
@@ -305,7 +305,7 @@ export const servicesData = [
             <section>
                 <p><strong>Tehlikeli madde taşımacılığında risk analizi</strong>, insan sağlığına ve çevreye yönelik potansiyel zararları minimize etmek için kritik bir öneme sahiptir. Tehlikeli madde taşımacılığı süreçlerine dahil olan işletmeler, risk analizleri ile taşıma faaliyetlerinde oluşabilecek risklerin farkında olmalı ve gerekli tedbirleri almalıdır.</p>
 
-                <img src="assets/img/default-risk-analysis.png" alt="Risk Analizi Görseli" class="content-image">
+                <img src="assets/img/section/default-risk-analysis.png" alt="Risk Analizi Görseli" class="content-image">
 
                 <h3>Risk Analizi Neden Gereklidir?</h3>
                 <p>Tehlikeli maddelerle çalışmak, hem çalışan sağlığı hem de çevre güvenliği açısından ciddi riskler barındırır. Risk analizi yapılmadan gerçekleştirilen taşımacılık faaliyetleri, kazalar, sızıntılar veya diğer olumsuz durumlar yaşandığında büyük kayıplara yol açabilir. Risk analizi, bu tür durumların önlenmesine yönelik bir yol haritası sunar ve tehlikeli maddelerin güvenli bir şekilde taşınmasını sağlar.</p>
@@ -331,7 +331,7 @@ export const servicesData = [
                     <li>Kaza durumunda olası maliyetlerin düşürülmesi</li>
                 </ul>
 
-                <p>İşletmenizin tehlikeli madde taşımacılık süreçlerinde güvenliği artırmak için <strong>Pastoral TMGDK</strong> ile iletişime geçerek risk analizi hizmetlerimizden faydalanabilirsiniz. Detaylı bilgi almak ve danışmanlık hizmetlerimizden yararlanmak için <a href="mailto:info@Pastoraltmgd.com">info@Pastoraltmgd.com</a> adresine e-posta gönderebilirsiniz.</p>
+                <p>İşletmenizin tehlikeli madde taşımacılık süreçlerinde güvenliği artırmak için <strong>Pastoral TMGDK</strong> ile iletişime geçerek risk analizi hizmetlerimizden faydalanabilirsiniz. Detaylı bilgi almak ve danışmanlık hizmetlerimizden yararlanmak için <a href="mailto:pastoral@pastoraltmgdk.com">pastoral@pastoraltmgdk.com</a> adresine e-posta gönderebilirsiniz.</p>
             </section>
         `
     }

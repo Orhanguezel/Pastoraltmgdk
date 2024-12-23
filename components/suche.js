@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Ana sayfayı göster
     function showMainPage() {
-        searchResults.innerHTML = "<p>Aramak için bir terim giriniz.</p>";
+        searchResults.innerHTML = "<p></p>";
     }
 
     // Sayfa yüklendiğinde hash varsa ilgili içeriği göster

@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         try {
-            const response = await fetch("http://localhost:3000/send-email", {
+            const response = await fetch("http://localhost:3005/send-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

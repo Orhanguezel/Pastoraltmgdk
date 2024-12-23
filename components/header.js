@@ -21,7 +21,14 @@ export function loadHeader() {
                 <div class="top-links">
                     <a href="#"><i class="fas fa-sitemap"></i> Sitemap</a> 
                     <a href="arama.html"><i class="fas fa-search"></i> Arama</a>
+                    <a href="tel:+90506 282 11 11" class="contact-item">
+                        <i class="fas fa-phone"></i>Telefon
+                    </a>
+                    <a href="teklif.html" class="contact-item">
+                        <i class="fas fa-envelope"></i> Mail
+                    </a>
                 </div>
+
                 <div class="mobile-menu-button" id="menu-toggle">
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -121,8 +128,6 @@ export function loadHeader() {
                                                 <li><a href="basvuru.html">İş Başvuru Formu</a></li>
                                                 <li><a href="teklif.html">Teklif İsteyiniz</a></li>
                                                 <li><a href="sss.html">Sık Sorulan Sorular</a></li>
-                                                <li><a href="#">Cezalar</a></li>
-                                                <li><a href="#">Fiyatlandırma</a></li>
                                             </ul>
                                         </li>
                                     </ul>
