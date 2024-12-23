@@ -6,9 +6,16 @@ const cors = require("cors"); // CORS için eklendi
 const app = express();
 const PORT = 3000;
 
-// CORS middleware'ini ekleyin
+// Dinamik CORS middleware'i
+const allowedOrigins = ["http://127.0.0.1:5500", "https://pastoraltmgdk.com"];
 app.use(cors({
-    origin: "http://127.0.0.1:5500", // İzin verilen köken
+    origin: (origin, callback) => {
+        if (!origin || allowedOrigins.includes(origin)) {
+            callback(null, true);
+        } else {
+            callback(new Error("CORS policy error: Origin not allowed"));
+        }
+    },
 }));
 
 // Body parser kullanımı
@@ -27,11 +34,28 @@ const transporter = nodemailer.createTransport({
 
 // POST /send-email endpointi
 app.post("/send-email", async (req, res) => {
-    const { name, phone, email, company, sector, activityArea, capacity, certificate, productInfo, productClass, transportMethod } = req.body;
+    const {
+        name, phone, email, company, sector,
+        activityArea, capacity, certificate,
+        productInfo, productClass, transportMethod
+    } = req.body;
 
     // Eksik alanları kontrol et
-    if (!name || !email || !phone || !company || !sector || !activityArea || !capacity || !certificate || !productInfo || !productClass || !transportMethod) {
-        return res.status(400).send("Tüm alanlar zorunludur!");
+    const missingFields = [];
+    if (!name) missingFields.push("Ad Soyad");
+    if (!phone) missingFields.push("Telefon");
+    if (!email) missingFields.push("E-posta");
+    if (!company) missingFields.push("Firma Adı");
+    if (!sector) missingFields.push("Faaliyet Sektörü");
+    if (!activityArea || !Array.isArray(activityArea) || activityArea.length === 0) missingFields.push("Faaliyet Alanı");
+    if (!capacity) missingFields.push("Yıllık Faaliyet Kapasitesi");
+    if (!certificate) missingFields.push("Faaliyet Belgesi");
+    if (!productInfo) missingFields.push("Ürün Bilgisi");
+    if (!productClass) missingFields.push("Ürünlerin Sınıfı");
+    if (!transportMethod) missingFields.push("Ürün Taşıma Şekli");
+
+    if (missingFields.length > 0) {
+        return res.status(400).send(`Eksik alanlar: ${missingFields.join(", ")}`);
     }
 
     try {
@@ -60,7 +84,6 @@ app.post("/send-email", async (req, res) => {
         res.status(500).send("E-posta gönderiminde hata oluştu.");
     }
 });
-
 
 // Sunucu başlatma
 app.listen(PORT, () => {
