@@ -12,7 +12,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "echo 'Building the project...'",
+    "build": "echo 'Building the project...'"
   },
   "keywords": [],
   "author": "Orhan Guezel",

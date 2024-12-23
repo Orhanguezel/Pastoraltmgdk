@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <!-- Bilgilendirme Bölümü -->
             <section class="application-info">
                 <h1>İş Başvurusu</h1>
-                <p>Siz de Pastoral TMGDK ekibine katılıp, yeni projelerde yer almak ve gelişmelere öncülük etmek ister misiniz? Başvurular tüm Türkiye geneli için alınmaktadır.</p>
+                <p>Siz de Pastoral TMGDK ekibine katılıp, yeni projelerde yer almak ve gelişmelere öncülük etmek ister misiniz?</p>
                 <p>Ekibimize katılmak, kendini geliştirmek ve bizlere katkı sağlayacak arkadaşları aramızda görmekten mutluluk duyarız. Yapmanız gereken, sağ taraftaki formu doldurup bize göndermek.</p>
 
                 <h2>Kısaca Pastoral TMGDK</h2>
