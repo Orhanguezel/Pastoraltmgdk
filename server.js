@@ -27,8 +27,8 @@ const transporter = nodemailer.createTransport({
     port: 465,
     secure: true, // SSL kullanımı
     auth: {
-        user: "pastoral@pastoraltmgdk.com", // SMTP kullanıcı adı
-        pass: "Pastoral1234#",             // SMTP şifresi
+        user: process.env.SMTP_USER, // Kullanıcı adı .env'den
+        pass: process.env.SMTP_PASSWORD, // Şifre .env'den
     },
 });
 
