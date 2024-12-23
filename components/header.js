@@ -19,7 +19,7 @@ export function loadHeader() {
                     <img src="assets/logo.png" alt="Pastoral TMGDK Logo" class="header-logo">
                 </a>
                 <div class="top-links">
-                    <a href="#"><i class="fas fa-sitemap"></i> Sitemap</a> 
+                    <a href="sitemap.html"><i class="fas fa-sitemap"></i> Sitemap</a> 
                     <a href="arama.html"><i class="fas fa-search"></i> Arama</a>
                     <a href="tel:+90506 282 11 11" class="contact-item">
                         <i class="fas fa-phone"></i>Telefon
@@ -187,7 +187,6 @@ export function loadHeader() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOMContentLoaded olayı tetiklendi");
     loadHeader(); // Header önce yüklenmeli
     loadCarousel(); // Carousel yüklemesi
 });

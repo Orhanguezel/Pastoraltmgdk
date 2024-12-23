@@ -1,0 +1,111 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Ana Sayfa -->
+    <url>
+        <loc>https://www.pastoraltmgdk.com/index.html</loc>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Kurumsal -->
+    <url>
+        <loc>https://www.pastoraltmgdk.com/#vision</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/#quality</loc>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Hizmetler -->
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sektorler.html#kimya-sanayi-tmgd</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sektorler.html#hastane-ve-salk-sektr-tmgd</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sektorler.html#akaryakt-istasyonlar-tmgd-muafiyet-belgesi</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sektorler.html#tekstil-ve-deri-sektr-tmgd-hizmeti</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sektorler.html#lojistik-ve-depolama-sektr-tmgd-hizmeti</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sektorler.html#ambalaj-ve-bask-sanayi-tmgd-hizmeti</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sektorler.html#gemi-ina-ve-bakm-sanayi-tmgd-hizmeti</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sektorler.html#kozmetik-ve-temizlik-rnleri-sanayi-tmgd-hizmeti</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sektorler.html#otomotiv-sanayi-tmgd-hizmeti</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sektorler.html#belediyeler-iin-tehlikeli-madde-gvenlik-danmanl-ve-tmgd-hizmeti</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sektorler.html#cam-sektr-tmgd-hizmeti-ve-tehlikeli-madde-gvenlik-danmanl</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sektorler.html#madencilik-ve-mermer-ocaklar-tmgd-hizmeti</loc>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sektorler.html#gda-sektrnde-tehlikeli-madde-gvenlik-danmanl-tmgd-hizmeti</loc>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Belgeler -->
+    <url>
+        <loc>https://www.pastoraltmgdk.com/mevzuat.html#kanunlar</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/mevzuat.html#yonetmelikler</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/mevzuat.html#yonergeler</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/mevzuat.html#genelgeler</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/mevzuat.html#tebligler</loc>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/mevzuat.html#talimatlar</loc>
+        <priority>0.6</priority>
+    </url>
+
+    <!-- Diğer -->
+    <url>
+        <loc>https://www.pastoraltmgdk.com/basvuru.html</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/teklif.html</loc>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://www.pastoraltmgdk.com/sss.html</loc>
+        <priority>0.5</priority>
+    </url>
+</urlset>

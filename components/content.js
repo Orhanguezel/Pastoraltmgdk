@@ -1,12 +1,10 @@
 export function loadContent() {
-    console.log("loadContent fonksiyonu çağrıldı.");
     const contentContainer = document.getElementById("content");
     if (!contentContainer) {
         console.warn("Content elementi bulunamadı. Bu sayfa içerik yüklemiyor olabilir.");
         return;
     }
 
-    console.log("Content elementi bulundu, içeriği yükleme işlemi başlıyor.");
     contentContainer.innerHTML =`
         <div class="container">
     <!-- Content Bölümü -->
@@ -34,6 +32,5 @@ export function loadContent() {
 
     `;
 
-    console.log("İçerik başarıyla yüklendi.");
 }
 

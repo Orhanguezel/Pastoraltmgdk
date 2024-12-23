@@ -25,4 +25,3 @@ app.listen(PORT, () => {
     console.log(`Sunucu ${PORT} portunda çalışıyor.`);
 });
 
-console.log(process.env.SMTP_USER, process.env.SMTP_PASSWORD);

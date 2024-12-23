@@ -1,4 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // API URL'sini ortam algılamasına göre ayarla
+    const API_BASE_URL = window.location.hostname === "localhost"
+        ? "http://localhost:3005" // Yerel ortam
+        : "https://api.pastoraltmgdk.com"; // Üretim ortamı
+
     const contentArea = document.getElementById("teklifFormu");
 
     contentArea.innerHTML = `
@@ -95,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
         };
 
         try {
-            const response = await fetch("http://localhost:3005/send-email", {
+            const response = await fetch(`${API_BASE_URL}/send-email`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

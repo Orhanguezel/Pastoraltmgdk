@@ -6,12 +6,29 @@ import { loadQualityPolicy } from '../components/quality.js';
 import { loadFooter } from '../components/footer.js';
 
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOMContentLoaded olayı tetiklendi");
-    loadHeader();
-    loadCarousel();
-    loadContent();
-    loadVision(); // loadVision çağrısını burada yönetin
-    loadQualityPolicy();
-    loadFooter();
-});
 
+    // Header ve Footer her sayfada yüklenecek
+    loadHeader();
+    loadFooter();
+
+    // Carousel yalnızca varsa yüklenecek
+    if (document.getElementById("carousel")) {
+        loadCarousel();
+    }
+
+    // Content yalnızca varsa yüklenecek
+    if (document.getElementById("content")) {
+        loadContent();
+    }
+
+    // Vision yalnızca varsa yüklenecek
+    if (document.getElementById("vision")) {
+        loadVision();
+    }
+
+    // QualityPolicy yalnızca varsa yüklenecek
+    if (document.getElementById("quality")) {
+        loadQualityPolicy();
+    }
+    
+});

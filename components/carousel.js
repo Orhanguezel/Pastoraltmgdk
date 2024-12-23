@@ -1,12 +1,10 @@
 export function loadCarousel() {
     const carousel = document.getElementById("carousel");
     if (!carousel) {
-        console.warn("Carousel elementi bulunamadı. Bu sayfa carousel içermiyor olabilir.");
         return;
     }
 
     // Carousel yükleme işlemleri
-    console.log("Carousel başarıyla yüklendi.");
 
     carousel.innerHTML = `
         <div class='carousel-container'>
