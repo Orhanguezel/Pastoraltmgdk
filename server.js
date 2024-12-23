@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const cors = require("cors"); // CORS için eklendi
+require("dotenv").config(); // .env dosyasını yükler
 
 const app = express();
 const PORT = 3005;
