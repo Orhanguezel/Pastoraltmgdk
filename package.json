@@ -11,12 +11,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "devDependencies": {
-    "gh-pages": "^6.2.0"
-  },
   "scripts": {
     "build": "echo 'Building the project...'",
-    "deploy": "gh-pages -d ."
   },
   "keywords": [],
   "author": "Orhan Guezel",
