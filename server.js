@@ -4,7 +4,7 @@ const nodemailer = require("nodemailer");
 const cors = require("cors"); // CORS için eklendi
 
 const app = express();
-const PORT = 3000;
+const PORT = 3005;
 
 // Dinamik CORS middleware'i
 const allowedOrigins = ["http://127.0.0.1:5500", "https://pastoraltmgdk.com"];
