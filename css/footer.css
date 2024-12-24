@@ -46,14 +46,30 @@ footer {
   }
   
   .footer-social a {
-    color: #f5f5f5;
-    margin: 0 8px;
-    font-size: 20px;
-  }
-  
-  .footer-social a:hover {
-    color: #87CEEB;
-  }
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%; /* İkonları yuvarlak yapar */
+    background-color: var(--background2-color); /* Arka plan rengi */
+    color: var(--text-color); /* İkon rengi */
+    font-size: 20px; /* İkon boyutu */
+    margin: 0 8px; /* İkonlar arasındaki boşluk */
+    transition: all 0.3s ease; /* Yumuşak geçiş efekti */
+}
+
+.footer-social a:hover {
+    background-color: var(--highlight-color); /* Hover durumda arka plan rengi */
+    color: var(--text-color); /* Hover durumda ikon rengi */
+    transform: scale(1.2); /* Hover durumda ikon büyür */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Hafif bir gölge efekti */
+}
+
+.footer-social a i {
+    vertical-align: middle; /* İkonların dikey hizalamasını düzeltir */
+}
+
   
   .footer-bottom {
     border-top: 1px solid #777;

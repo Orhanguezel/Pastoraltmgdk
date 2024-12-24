@@ -8,6 +8,7 @@ header {
   display: flex;
   flex-direction: column;
   background-color: var(--background4-color);
+  border-bottom: 1px solid rgba(241, 235, 235, 0.1);
 }
 
 .header-top {
@@ -31,7 +32,7 @@ header {
 }
 
 .top-links a {
-  color: var(--text-color);
+  color: var(--text2-color);
   margin-right: 10px;
   text-decoration: none;
 }
@@ -99,7 +100,7 @@ header {
 }
 
 /* Menü Buton Renkleri */
-#kurumsal { background-color: var(--green2-color); color: var(--text2-color);}
+#kurumsal { background-color: var(--tertiary-color2); color: var(--text2-color);}
 #belgeler { background-color: var(--dark-color); color: var(--text2-color);}
 #hizmetler { background-color: var(--text5-color); color: var(--text2-color);}
 #kurumsal:hover,#belgeler:hover,#hizmetler:hover {
@@ -155,7 +156,7 @@ header {
   background-color: var(--background2-color);
 }
 
-.kurumsal-dropdown .upper-level { background-color: var(--green2-color);}
+.kurumsal-dropdown .upper-level { background-color: var(--tertiary-color2);}
 .belgeler-dropdown .upper-level { background-color: var(--dark-color);}
 .hizmetler-dropdown .upper-level { background-color: var(--text5-color);}
 
@@ -210,7 +211,7 @@ header {
 }
 
 .kurumsal-dropdown ul li ul li a:hover {
-  background-color: var(--green2-color);
+  background-color: var(--tertiary-color2);
 }
 .belgeler-dropdown ul li ul li a:hover {
   background-color: var(--dark-color);
@@ -363,25 +364,37 @@ header {
   .hide {
     opacity: 0;
   }
+
+  .header-top {
+    justify-content:end;
+
+   
+  }
   .top-links {
     display: flex; /* Flex düzenlemesi yapar */
     justify-content: center; /* Tüm ikonları yatayda ortalar */
     align-items: center; /* Dikeyde hizalar */
-    gap: 10px; /* İkonlar arasında boşluk */
+    gap: 5px; /* İkonlar arasında boşluk */
   }
 
   .top-links a {
     display: flex; /* Flex düzenleme */
     justify-content: center; /* İkonu ortalar */
     align-items: center; /* Dikey hizalama */
-    width: 40px; /* Sabit genişlik */
-    height: 40px; /* Sabit yükseklik */
+    width: 30px; /* Sabit genişlik */
+    height: 30px; /* Sabit yükseklik */
     border-radius: 50%; /* Yuvarlak butonlar için */
     background-color: var(--background-color); /* Arka plan rengi */
   }
 
+  .top-links a:hover {
+    background-color: var(--highlight-color); /* Hover durumunda arka plan rengi */
+    transform: scale(1.2); /* Büyüme efekti */
+    transition: ease-in-out 0.3s; /* Geçiş efekti */
+  }
+
   .top-links a i {
-    font-size: 20px; /* İkon boyutu */
+    font-size: 15px; /* İkon boyutu */
     color: var(--text-color); /* İkon rengi */
   }
 

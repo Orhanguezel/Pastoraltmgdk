@@ -73,6 +73,7 @@
 /* Mobil için daha iyi optimizasyon */
 @media (max-width: 768px) {
     .page-header-image {
+        top:80px;
         max-height: 300px; /* Tabletler için yüksekliği ayarla */
     }
 }

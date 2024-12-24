@@ -15,11 +15,11 @@ export function loadFooter() {
               <div class="footer-links">
                   <h4>Hızlı Bağlantılar</h4>
                   <ul>
-                      <li><a href="#">Anasayfa</a></li>
-                      <li><a href="#">Hakkımızda</a></li>
-                      <li><a href="#">Hizmetlerimiz</a></li>
-                      <li><a href="#">Belgeler</a></li>
-                      <li><a href="#">İletişim</a></li>
+                      <li><a href="index.html">Anasayfa</a></li>
+                      <li><a href="sektorler.html">Hizmet Verdiğimiz Sektörler</a>
+                      <li><a href="hizmetlerimiz.html">TMGDK Hizmetleri</a>
+                      <li><a href="mevzuat.html">Mevzuatlar</a></li>
+                      <li><a href="teklif.html">Teklif ver</a></li>
                   </ul>
               </div>
               <div class="footer-contact">

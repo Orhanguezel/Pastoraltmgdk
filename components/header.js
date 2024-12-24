@@ -68,7 +68,7 @@ export function loadHeader() {
                             <div class="pastoral-dropdown-row">
                                 <div class="pastoral-dropdown-column hizmetler-dropdown">
                                     <ul>
-                                        <li><a href="#" class="upper-level">Hizmet Verdiğimiz Sektörler</a>
+                                        <li><a href="sektorler.html" class="upper-level">Hizmet Verdiğimiz Sektörler</a>
                                             <ul>
                                                 <li><a href="sektorler.html#kimya-sanayi-tmgd">Kimya Sanayi TMGD</a></li>
                                                 <li><a href="sektorler.html#hastane-ve-salk-sektr-tmgd">Hastane ve Sağlık TMGD</a></li>
