@@ -66,6 +66,10 @@
     object-position: center; /* Resmi ortala */
 }
 
+
+
+  
+
 /* Mobil için daha iyi optimizasyon */
 @media (max-width: 768px) {
     .page-header-image {
