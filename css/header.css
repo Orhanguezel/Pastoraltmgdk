@@ -33,6 +33,7 @@ header {
 .top-links a {
   color: var(--text-color);
   margin-right: 10px;
+  text-decoration: none;
 }
 
 .top-links a:hover {
@@ -362,4 +363,33 @@ header {
   .hide {
     opacity: 0;
   }
+  .top-links {
+    display: flex; /* Flex düzenlemesi yapar */
+    justify-content: center; /* Tüm ikonları yatayda ortalar */
+    align-items: center; /* Dikeyde hizalar */
+    gap: 10px; /* İkonlar arasında boşluk */
+  }
+
+  .top-links a {
+    display: flex; /* Flex düzenleme */
+    justify-content: center; /* İkonu ortalar */
+    align-items: center; /* Dikey hizalama */
+    width: 40px; /* Sabit genişlik */
+    height: 40px; /* Sabit yükseklik */
+    border-radius: 50%; /* Yuvarlak butonlar için */
+    background-color: var(--background-color); /* Arka plan rengi */
+  }
+
+  .top-links a i {
+    font-size: 20px; /* İkon boyutu */
+    color: var(--text-color); /* İkon rengi */
+  }
+
+  .top-links a span {
+    display: none; /* Metni gizler */
+  }
+
+
+
+
 }

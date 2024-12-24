@@ -8,7 +8,7 @@ export const servicesData = [
             <p>“<strong>Tehlikeli Madde Güvenlik Danışmanlığı Tebliği</strong>” uyarınca, yılda net 50 ton veya daha fazla tehlikeli maddeyle ilgilenen tüm firmaların yetkilendirilmiş danışmanlık hizmeti alması zorunludur. Ayrıca, Sınıf 1, Sınıf 6.2 ve Sınıf 7 gibi yüksek riskli tehlikeli maddelerle ilgilenen firmalar için miktar sınırı gözetilmeden danışmanlık zorunluluğu vardır.</p>
 
             <h3>TMGD Hizmetleri</h3>
-            <p><strong>Pastoral Mühendislik</strong> olarak, <em>Ulaştırma ve Altyapı Bakanlığı</em> yetkili kuruluşu olarak danışmanlık hizmetleri sağlıyoruz. İşletmelere, mevzuat gereği zorunlu olan tüm belge, eğitim ve denetim hizmetlerini sunuyoruz.</p>
+            <p><strong>Pastoral TMGDK</strong> olarak, <em>Ulaştırma ve Altyapı Bakanlığı</em> yetkili kuruluşu olarak danışmanlık hizmetleri sağlıyoruz. İşletmelere, mevzuat gereği zorunlu olan tüm belge, eğitim ve denetim hizmetlerini sunuyoruz.</p>
 
             <h3>Genel Bilinçlendirme ve Farkındalık Eğitimi</h3>
             <p>Bu eğitim, tehlikeli maddelerle temas eden tüm personelin, tehlikeli madde sınıfları, ambalaj standartları, taşıma prosedürleri, sızma/dökülme durumlarında yapılması gerekenler gibi konularda bilinçlenmesini sağlar. Böylece, iş güvenliği ve çevre sağlığı korunur.</p>
@@ -33,6 +33,44 @@ export const servicesData = [
 
             <h3>Teçhizat Temini</h3>
             <p>Tehlikeli madde taşımacılığında bulundurulması gereken sertifikalı kişisel ve genel koruyucu ekipmanların yanı sıra yangın söndürme cihazlarının teminini sağlıyoruz.</p>
+        `
+    },
+    {
+        title: "TMGD Kimdir?",
+        content: `
+            <section>
+                <p><strong>TMGD</strong>, "Tehlikeli Madde Güvenlik Danışmanı" unvanının kısaltmasıdır. İngilizcesi "Dangerous Goods Safety Advisor" (DGSA) olarak bilinir. TMGD, tehlikeli maddelerle çalışan firmalara danışmanlık yaparak güvenlik standartlarının sağlanması ve mevzuatlara uygunluğun kontrol edilmesi süreçlerini yönetir.</p>
+                
+                <h3>TMGD'nin Görevleri</h3>
+                <ul>
+                    <li>Tehlikeli maddelerin taşınması sırasında oluşabilecek riskleri analiz etmek ve bu riskleri minimize edecek tedbirler önermek.</li>
+                    <li>ADR mevzuatına uygun şekilde taşımacılık süreçlerini planlamak ve uygulamak.</li>
+                    <li>Tehlikeli madde faaliyetlerini denetlemek ve raporlamak.</li>
+                    <li>İşletmelere, personel eğitimleri ve dökümantasyon hazırlığı gibi alanlarda destek vermek.</li>
+                </ul>
+                
+                <h3>TMGD Olma Şartları</h3>
+                <p>Türkiye'de TMGD olmak isteyenlerin aşağıdaki şartları yerine getirmesi gerekmektedir:</p>
+                <ul>
+                    <li>4 yıllık üniversite mezunu olmak.</li>
+                    <li>Ulaştırma ve Altyapı Bakanlığı onaylı eğitim kurumlarından 49 saatlik eğitim almak.</li>
+                    <li>TMGD sınavından 100 üzerinden en az 70 puan almak.</li>
+                    <li>Yangın eğitimi sertifikasına sahip olmak.</li>
+                </ul>
+
+                <h3>TMGD'nin İşletmelere Sağladığı Faydalar</h3>
+                <p>TMGD'ler, işletmelere tehlikeli madde taşımacılığı süreçlerinde rehberlik ederek yasal uyumluluk ve güvenlik avantajları sağlar:</p>
+                <ul>
+                    <li>İnsan sağlığı ve çevre güvenliğinin korunması.</li>
+                    <li>Mevzuata uygun taşımacılık süreçleri ile cezai yaptırımların önlenmesi.</li>
+                    <li>Taşıma kazalarının minimize edilmesi.</li>
+                    <li>Çalışanlar için güvenli bir çalışma ortamı yaratılması.</li>
+                </ul>
+
+                <h3>Pastoral TMGDK ile Profesyonel TMGD Hizmetleri</h3>
+                <p><strong>Pastoral TMGDK</strong>, Ulaştırma ve Altyapı Bakanlığı yetkili kuruluşu olarak, işletmelere profesyonel TMGD hizmetleri sunar. Firmaların tehlikeli madde taşımacılığında ihtiyaç duyduğu her türlü belge, eğitim ve danışmanlık hizmetleri sağlanmaktadır.</p>
+                <p>Daha fazla bilgi almak ve hizmet talebinde bulunmak için <a href="mailto:pastoral@pastoraltmgdk.com">pastoral@pastoraltmgdk.com</a> adresinden bize ulaşabilirsiniz.</p>
+            </section>
         `
     },
     {
@@ -271,7 +309,7 @@ export const servicesData = [
         title: "Uluslararası Numune Gönderimleri",
         content: `
             <section>
-                <p><strong>Pastoral Mühendislik</strong> markası olan <strong>TR Freight</strong> (TRF) ile tehlikeli veya tehlikesiz kimyasal numunelerinizi güvenle müşterilerinize ulaştırmak çok kolay. Milyon dolarlık iş anlaşmalarınızı riske atmamak için, kimyasal numune gönderimlerinizde <strong>IATA Yetkili TR Freight</strong> hizmetlerimizden faydalanabilirsiniz.</p>
+                <p><strong>Pastoral TMGDK</strong> markası olan <strong>TR Freight</strong> (TRF) ile tehlikeli veya tehlikesiz kimyasal numunelerinizi güvenle müşterilerinize ulaştırmak çok kolay. Milyon dolarlık iş anlaşmalarınızı riske atmamak için, kimyasal numune gönderimlerinizde <strong>IATA Yetkili TR Freight</strong> hizmetlerimizden faydalanabilirsiniz.</p>
                 
                 
 

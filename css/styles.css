@@ -311,6 +311,11 @@ table caption {
   transform: scale(1.1); /* Hover sırasında büyütme efekti */
 }
 
+ul li {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
 
 /* Responsive düzenlemeler */
 @media (max-width: 768px) {
