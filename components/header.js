@@ -119,8 +119,6 @@ export function loadHeader() {
                                                 <li><a href="mevzuat.html#yonetmelikler">Yönetmelikler</a></li>
                                                 <li><a href="mevzuat.html#yonergeler">Yönergeler</a></li>
                                                 <li><a href="mevzuat.html#genelgeler">Genelgeler</a></li>
-                                                <li><a href="mevzuat.html#tebligler">Tebliğler</a></li>
-                                                <li><a href="mevzuat.html#talimatlar">Talimatlar</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="#" class="upper-level">Diğer</a>

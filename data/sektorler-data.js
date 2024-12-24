@@ -10,7 +10,7 @@ export const sektorlerData = [
             <h3>Neden Pastoral TMGD?</h3>
             <p>Pastoral TMGD olarak, Ulaştırma ve Altyapı Bakanlığı tarafından yetkilendirilmiş bir TMGDK firmasıyız ve kimya sektöründe derinlemesine bilgi ve tecrübeye sahibiz. Size en iyi TMGD hizmetini en hızlı ve güvenilir şekilde sunarak tüm yükümlülüklerinizden muaf hale gelmenizi sağlıyoruz. Tehlikeli Madde Faaliyet Belgesi (TMFB) raporu, sadece yetkili TMGDK firmaları tarafından verilebilmekte olup, Pastoral TMGD bu alanda güvenilir çözüm ortağınız olarak yanınızdadır.</p>
             <h3>Çözüm Odaklı Yaklaşım</h3>
-            <p>Kimya sektöründe tehlikeli madde güvenliği gereksinimlerinizi detaylı analiz ederek, firmanıza en uygun çözümleri sunmayı hedefliyoruz. TMGD hizmetlerimizle sektördeki rekabet gücünüzü artırırken, güvenli ve yasal uyumlu bir işletme yapısına sahip olmanıza yardımcı oluyoruz. İhtiyacınız olan hizmetler veya sorularınız için lütfen <a href='#'>iletişim sayfamızdan</a> bize ulaşın.</p>
+            <p>Kimya sektöründe tehlikeli madde güvenliği gereksinimlerinizi detaylı analiz ederek, firmanıza en uygun çözümleri sunmayı hedefliyoruz. TMGD hizmetlerimizle sektördeki rekabet gücünüzü artırırken, güvenli ve yasal uyumlu bir işletme yapısına sahip olmanıza yardımcı oluyoruz. İhtiyacınız olan hizmetler veya sorularınız için lütfen <a href='teklif.html'>iletişim sayfamızdan</a> bize ulaşın.</p>
         `
     },
     {
@@ -25,7 +25,7 @@ export const sektorlerData = [
             <h3>Neden Pastoral TMGD?</h3>
             <p>Sağlık sektöründeki tehlikeli madde güvenliği gereksinimlerinizi detaylı analiz ederek, en uygun çözümleri sunmayı hedefliyoruz. Sağlık sektöründe faaliyet gösteren firmaların güvenlik standartlarını en üst seviyeye taşımak için çalışıyoruz. TMGD hizmetlerimizle, sağlık sektöründe güvenli ve yasal uyumlu bir işleyiş sağlamanıza yardımcı oluyoruz. Tüm tehlikeli madde güvenliği ihtiyaçlarınız için Pastoral TMGD’ye güvenebilirsiniz.</p>
             <h3>Çözüm Odaklı Yaklaşım</h3>
-            <p>Pastoral TMGD olarak, sağlık sektöründe güvenliği ön planda tutarak, ihtiyaçlarınıza en ideal çözümleri sunmayı hedefliyoruz. Sağlık sektöründe ADR kapsamındaki tüm tehlikeli maddelerin güvenli yönetimini sağlamak adına geniş kapsamlı danışmanlık hizmetlerimizle yanınızdayız. Detaylı bilgi almak veya diğer hizmetlerimiz hakkında soru sormak için lütfen <a href='#'>iletişim sayfamızdan</a> bize ulaşın.</p>
+            <p>Pastoral TMGD olarak, sağlık sektöründe güvenliği ön planda tutarak, ihtiyaçlarınıza en ideal çözümleri sunmayı hedefliyoruz. Sağlık sektöründe ADR kapsamındaki tüm tehlikeli maddelerin güvenli yönetimini sağlamak adına geniş kapsamlı danışmanlık hizmetlerimizle yanınızdayız. Detaylı bilgi almak veya diğer hizmetlerimiz hakkında soru sormak için lütfen <a href='teklif.html'>iletişim sayfamızdan</a> bize ulaşın.</p>
         `
     },
     {

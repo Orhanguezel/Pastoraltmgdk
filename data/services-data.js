@@ -41,7 +41,7 @@ export const servicesData = [
             <section>
                 <p><strong>Tehlikeli Madde Faaliyet Belgesi</strong> (TMFB), tehlikeli maddelerin karayoluyla taşınmasında rol alan; dolduran, paketleyen, yükleyen, gönderen, alıcı, boşaltan ve tank-konteyner işletmecisi gibi faaliyetlerde bulunan işletmelerin almak zorunda olduğu bir belgedir. Bu belgeye sahip olmayan firmalar, yasal uyumluluk sorunları ve cezai yaptırımlar ile karşı karşıya kalabilir.</p>
                 
-                <img src="assets/img/default-tmfb.png" alt="Tehlikeli Madde Faaliyet Belgesi" class="content-image">
+                
 
                 <h3>TMFB Yönergesi</h3>
                 <p>TMFB Yönergesi’ne göre; belirli miktarın üzerinde tehlikeli madde taşıyan, işleyen veya bulunduran tüm işletmelerin Tehlikeli Madde Faaliyet Belgesi (TMFB) alması zorunludur. Sınıf 1, 6 ve 7 tehlikeli maddeler ile ilgilenen firmalar ise miktardan bağımsız olarak TMFB almak zorundadır. TMFB belgesinin hazırlanması için <strong>Ek-3 Faaliyet Tespit Raporu</strong> gerekmektedir ve bu rapor yalnızca yetkili Tehlikeli Madde Güvenlik Danışmanlığı Kuruluşları (TMGDK) tarafından düzenlenebilir.</p>
@@ -67,7 +67,7 @@ export const servicesData = [
                 <h3>TMFB Yenileme Gereklilikleri</h3>
                 <p>TMFB’nin geçerlilik süresi 5 yıl olup, bu süre sonunda belgenin yenilenmesi gerekmektedir. Pastoral TMGDK, TMFB yenileme süreçlerinde işletmelerin yanında olup, tüm belge ve başvuru işlemlerini eksiksiz olarak tamamlamaktadır.</p>
                 
-                <img src="assets/img/default-tmfb-info.png" alt="Tehlikeli Madde Faaliyet Belgesi Süreci" class="content-image">
+                
                 
                 <h3>TMFB Başvurusu İçin Gereken Belgeler</h3>
                 <p>TMFB başvurusunda bulunmak isteyen firmaların, <strong>Ek-3 Faaliyet Tespit Raporu</strong> ve gerekli diğer belgeleri hazırlaması gerekmektedir. Pastoral TMGDK uzmanları, işletmenizin faaliyet yapısına uygun bir başvuru dosyası hazırlamanız için destek sunmaktadır.</p>
@@ -86,7 +86,7 @@ export const servicesData = [
                 <h2>KKDİK (Kimyasalların Kaydı, Değerlendirilmesi, İzni ve Kısıtlanması) - KDU Hizmetleri</h2>
                 <p><strong>KKDİK</strong> (Kimyasalların Kaydı, Değerlendirilmesi, İzni ve Kısıtlanması) Yönetmeliği, Avrupa Birliği'nin REACH düzenlemesi model alınarak Türkiye endüstrisine uyarlanmıştır. 23 Haziran 2017 tarihinde yürürlüğe giren bu yönetmelik, kimyasalların insan sağlığına ve çevreye etkilerini azaltmak ve kimyasalların kontrolünü sağlamak amacıyla düzenlenmiştir.</p>
 
-                <img src="assets/img/default-kkdik.png" alt="KKDİK - KDU Hizmetleri" class="content-image">
+               
 
                 <h3>KKDİK Yönetmeliğinin Temel Amaçları</h3>
                 <ul>
@@ -171,7 +171,7 @@ export const servicesData = [
             <section>
                 <p><strong>Tehlikeli Madde Güvenlik Danışmanlığı (TMGD) Eğitimleri</strong>, tehlikeli maddelerle çalışan personelin güvenlik bilgilerini artırmak ve sektördeki gereksinimleri karşılamalarını sağlamak amacıyla düzenlenir. Pastoral TMGDK olarak, <em>ADR Mevzuatı</em> çerçevesinde zorunlu eğitimleri sunarak personelin teorik bilgileri pratik deneyimlerle harmanlamasına destek oluyoruz.</p>
                 
-                <img src="assets/img/default-tmgd-egitimi.png" alt="TMGD Eğitim Görseli" class="content-image">
+                
 
                 <h3>TMGD Eğitim Kapsamı</h3>
                 <p>Eğitimler, ADR Mevzuatı'nın 1.3 ve 8.2.3 bölümlerine uygun olarak düzenlenir ve personelin farkındalığını artırmayı amaçlayan aşağıdaki temel eğitimleri içerir:</p>
@@ -210,7 +210,7 @@ export const servicesData = [
             <section>
                 <p><strong>Tehlikeli Madde Taşımacılığı</strong> için ambalaj özelliklerinin belirlenmesi ve doğru etiketleme, güvenli taşıma süreçlerinin en önemli adımlarından biridir. <strong>Pastoral TMGD</strong> olarak, tehlikeli maddelerin güvenle taşınabilmesi için ambalajların yapısal özelliklerini belirleme, uygun ambalaj temini ve etiketleme işlemlerinde işletmelere profesyonel destek sağlıyoruz.</p>
                 
-                <img src="assets/img/default-packaging.png" alt="Ambalaj Özellikleri ve Etiketleme Görseli" class="content-image">
+               
 
                 <h3>Ambalaj Özellikleri ve Tehlikeli Maddelerin Tanımı</h3>
                 <p>Tehlikeli maddeler; yapısal özellikleri veya taşıma sırasındaki durumları nedeniyle, insan sağlığına ve çevreye zarar verebilecek potansiyele sahiptir. Bu maddeler, ADR düzenlemeleri kapsamında <strong>katı, sıvı ve gaz halde</strong> taşınabilir ve her biri için belirli ambalaj gereklilikleri bulunmaktadır.</p>
@@ -241,7 +241,7 @@ export const servicesData = [
             <section>
                 <p><strong>KKDİK</strong>, AB Uyum politikası kapsamında yürürlüğe giren bir düzenlemedir. Türkiye'de kimyasalların kaydı, değerlendirilmesi, yetkilendirilmesi ve kısıtlanması amacıyla 23 Haziran 2017 tarihinde yürürlüğe girmiştir. Bu düzenleme, <strong>insan sağlığının ve çevrenin korunması</strong> ile kimyasalların güvenli kullanımını amaçlamaktadır. Ayrıca, Türk kimya sanayisinin rekabet gücünü artırmak için alternatif test yöntemlerini teşvik eder.</p>
                 
-                <img src="assets/img/default-image.png" alt="KKDİK Kayıt Süreci ve Zaman Çizelgesi" class="content-image">
+                
 
                 <h3>KKDİK Zaman Çizelgesi</h3>
                 <ul>
@@ -258,7 +258,7 @@ export const servicesData = [
                 <h2>Ortak Kayıt Avantajları</h2>
                 <p>Ortak kaydın amacı, bir temsilde birleşerek maliyetleri azaltmak ve hayvan testlerini en aza indirmektir. Pastoral, lider kayıt ettiren rolünü üstlenerek veya lider firma ile konsorsiyum kurarak <strong>maliyet etkin bir süreç</strong> sağlar. Birçok madde için veri sahibi olan Pastoral, kayıt sürecini hızlı ve uygun maliyetli hale getirme avantajı sunar.</p>
                 
-                <img src="assets/img/default-image.png" alt="Ortak Kayıt ve Avantajları" class="content-image">
+                
             </section>
 
             <section>
@@ -273,7 +273,7 @@ export const servicesData = [
             <section>
                 <p><strong>Pastoral Mühendislik</strong> markası olan <strong>TR Freight</strong> (TRF) ile tehlikeli veya tehlikesiz kimyasal numunelerinizi güvenle müşterilerinize ulaştırmak çok kolay. Milyon dolarlık iş anlaşmalarınızı riske atmamak için, kimyasal numune gönderimlerinizde <strong>IATA Yetkili TR Freight</strong> hizmetlerimizden faydalanabilirsiniz.</p>
                 
-                <img src="assets/img/default-sample-shipping.png" alt="Uluslararası Kimyasal Numune Gönderimleri" class="content-image">
+                
 
                 <h3>TR Freight Hakkında</h3>
                 <p>TRF (TR Freight & Logistics), <em>Türkiye’nin ilk ve tek IATA yetkili Tehlikeli Madde Güvenlik Danışmanlığı Kuruluşu</em> olarak hizmet vermektedir. Ayrıca FIATA, UTİKAD, GLA Family üyeliklerine sahip ve WCA DG kabulü olan tek Türk firmasıdır. Kimyasal numune gönderimleri veya geniş çaplı ithalat/ihracat işlemlerinizde TRF ile tüm aşamaları profesyonel olarak yönetiyoruz.</p>
@@ -294,7 +294,7 @@ export const servicesData = [
                 <h3>Neden TR Freight’i Tercih Etmelisiniz?</h3>
                 <p>TRF ile tüm gönderiler mümkün. Numune gönderimlerinizin her aşamasında destek sunuyor ve profesyonel ekibimizle tüm süreci yönetiyoruz. İşlemlerinizin sorunsuz ilerlemesi için hemen bizimle iletişime geçin. Müşterilerinize kaliteli bir hizmet sunarak güven oluşturun.</p>
                 
-                <img src="assets/img/default-sample-shipping-info.png" alt="TR Freight Kimyasal Numune Gönderim Süreci" class="content-image">
+                
 
                 <p>Detaylı bilgi almak veya hizmet talep etmek için <a href="mailto:pastoral@pastoraltmgdk.com">pastoral@pastoraltmgdk.com</a> adresinden bizimle iletişime geçebilirsiniz.</p>
             </section>
